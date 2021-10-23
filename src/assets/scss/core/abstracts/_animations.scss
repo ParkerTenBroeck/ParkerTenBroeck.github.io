@@ -1,0 +1,16 @@
+.blinking-animation {
+    //border-right: .05em solid;
+    animation: caret ease 0.9s infinite;
+}
+  
+@keyframes caret {
+0% {
+    opacity: 1;
+}
+50% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
