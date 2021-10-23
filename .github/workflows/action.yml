@@ -30,6 +30,7 @@ jobs:
       run: npm run build
       env:
         CI: false
+        PUBLIC_URL:https://parkertenbroeck.com/Actions-Test/
     
 #    - name: Run tests
 #      run: npm run test
