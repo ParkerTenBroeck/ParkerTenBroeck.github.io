@@ -27,8 +27,8 @@
 		&.push-left {
 
 			&::after {
-				flex-basis: $features-tiles-item--width;
-				max-width: $features-tiles-item--width;
+				flex-basis: $features-tiles-item--min-width;
+				max-width: $features-tiles-item--min-width;
 				@if ( $features-tiles-items--padding__mobile != null ) {
 					padding-left: $features-tiles-items--padding__mobile / 2;
 					padding-right: $features-tiles-items--padding__mobile / 2;
@@ -38,8 +38,8 @@
 	}
 
 	.tiles-item {
-		flex-basis: $features-tiles-item--width;
-		max-width: $features-tiles-item--width;
+		flex-basis: $features-tiles-item--min-width;
+		max-width: $features-tiles-item--min-width;
 		@if ( $features-tiles-items--padding__mobile != null ) {
 			padding: $features-tiles-items--padding__mobile / 2;
 		}
@@ -86,6 +86,8 @@
 				&.push-left {
 
 					&::after {
+						flex-basis: $features-tiles-item--max-width;
+						max-width: $features-tiles-item--max-width;
 						padding-left: $features-tiles-items--padding__desktop / 2;
 						padding-right: $features-tiles-items--padding__desktop / 2;
 					}
@@ -93,6 +95,8 @@
 			}
 
 			.tiles-item {
+				flex-basis: $features-tiles-item--max-width;
+				max-width: $features-tiles-item--max-width;
 				padding: $features-tiles-items--padding__desktop / 2;
 			}
 		}
