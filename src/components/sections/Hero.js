@@ -56,7 +56,7 @@ const Hero = ({
 
   document.addEventListener('DOMContentLoaded',function(event){
     // array with texts to type in typewriter
-    var dataText = [ "Software Developer.", "Student.", "Web Developer."];
+    var dataText = [ "Software Developer.", "Student.", "Cat Lover."];
     
 
     function setText(text){
@@ -129,7 +129,7 @@ const Hero = ({
       <div className="container tiles-item-inner">
         <div className={innerClasses}>
           <div className="hero-content">
-            <div className="reveal-from-bottom" style={{'marginTop':'-3rem', 'border-radius':'99999px', 'border-color': 'rgba(255,99,235,var(--tw-border-opacity))','border-widht':'4px'}} data-reveal-delay="100">
+            <div className="reveal-from-bottom logo-round-above-container" data-reveal-delay="100">
               <LogoRound/>
             </div>
             <h4 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
@@ -178,8 +178,8 @@ const Hero = ({
                 Apart from that, when I'm not coding and the cold season's here, I love to head to the slopes and ski.
               </p>
               <div className="text-xxs reveal-from-bottom mb-16" style={{'textAlign':'left'}} data-reveal-delay="800">
-                <Button size="sm" className="text-xxs" style={{'border-radius':'20px'}} tag="a" color="primary" href="https://cruip.com/">
-                    Get In Touch
+                <Button size="sm" className="text-xxs" style={{'border-radius':'20px'}} tag="a" color="primary" href="/resume/">
+                    See Resume
                 </Button>
               </div>
               <div className="reveal-from-bottom"  data-reveal-delay="1000">
