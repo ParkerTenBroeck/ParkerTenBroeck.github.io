@@ -129,15 +129,15 @@ const Hero = ({
       <div className="container tiles-item-inner">
         <div className={innerClasses}>
           <div className="hero-content">
-            <div className="reveal-from-bottom" style={{'margin-top':'-3rem', 'border-radius':'99999px', 'border-color': 'rgba(255,99,235,var(--tw-border-opacity))','border-widht':'4px'}} data-reveal-delay="100">
+            <div className="reveal-from-bottom" style={{'marginTop':'-3rem', 'border-radius':'99999px', 'border-color': 'rgba(255,99,235,var(--tw-border-opacity))','border-widht':'4px'}} data-reveal-delay="100">
               <LogoRound/>
             </div>
             <h4 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
               Parker TenBroeck
             </h4>
-            <div className="container-xs">
-            <p class="text-xs reveal-from-bottom" data-reveal-delay="400" style={{'margin-bottom':'16px','display':'flex', 'justify-content':'flex-start', 'align-items':'center'}}>
-                <svg style={{'display': 'block','margin-right':'8px','margin-left':'0px','height': '100%'}} 
+            <div className="container" style={{'paddingLeft':'32px', 'paddingRight':'32px'}}>
+              <p class="text-xs reveal-from-bottom" data-reveal-delay="400" style={{'margin-bottom':'16px','display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
+                <svg style={{'display': 'block','marginRight':'8px','marginLeft':'0px','height': '100%'}} 
                      stroke="currentColor" 
                      fill="none" 
                      stroke-width="0" 
@@ -154,8 +154,8 @@ const Hero = ({
                 <span className="typeWritter"></span>
                 <span className="blink">|</span>
               </p>
-              <p class="text-xs reveal-from-bottom" data-reveal-delay="400" style={{'margin-bottom':'16px','display':'flex', 'justify-content':'flex-start', 'align-items':'center'}}>
-                <svg style={{'display': 'block','margin-right':'8px','margin-left':'0px','height': '100%'}} 
+              <p class="text-xs reveal-from-bottom" data-reveal-delay="400" style={{'margin-bottom':'16px','display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
+                <svg style={{'display': 'block','marginRight':'8px','marginLeft':'0px','height': '100%'}} 
                      stroke="currentColor" 
                      fill="currentColor" 
                      stroke-width="0" 
@@ -168,15 +168,21 @@ const Hero = ({
                 </svg>
                 <span>Ontario, Canada</span>
               </p>
-              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="600">
-                I really need to write a stupid about me section this is honestly getting rediculous
+              <p className="text-xs m-0 mb-32 reveal-from-bottom" style={{'text-align':'left'}} data-reveal-delay="600">
+                My name is Parker TenBroeck. I'm an aspiring Software Developer, student, and cat lover.
+                I thoroughly enjoy writing in Java, C and C++ with well-developed skills in JavaScript, Assembly(MIPS) and HTML. 
+                My programming experience is predominantly from personal projects, with school work making up the rest.
+                I enjoy taking part and contributing to the open-source community, publishing my work for others to use.
+                I am also a well-developed leader with experience as a student team-lead on a world champion FRC(First Robotics Competition) Robotics team, Simbotics 1114.
+                I have always wanted to work with computers to learn and contribute to technology. 
+                Apart from that, when I'm not coding and the cold season's here, I love to head to the slopes and ski.
               </p>
-              <div className="text-xs reveal-from-bottom mb-16" data-reveal-delay="800">
-                <Button size="sm" style={{'border-radius':'20px'}} tag="a" color="primary" href="https://cruip.com/">
+              <div className="text-xxs reveal-from-bottom mb-16" style={{'textAlign':'left'}} data-reveal-delay="800">
+                <Button size="sm" className="text-xxs" style={{'border-radius':'20px'}} tag="a" color="primary" href="https://cruip.com/">
                     Get In Touch
                 </Button>
               </div>
-              <div className="reveal-from-bottom" data-reveal-delay="1000">
+              <div className="reveal-from-bottom"  data-reveal-delay="1000">
                 <FooterSocial iconSize="28px" wide/>
               </div>
             </div>

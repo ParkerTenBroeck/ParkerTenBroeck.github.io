@@ -8,7 +8,7 @@ const ScrollReveal = React.forwardRef((props, ref) => {
   const [revealEl, setRevealel] = useState([]);
 
   const checkComplete = () => {
-    return revealEl.length <= document.querySelectorAll('[class*=reveal-].is-revealed').length;
+    return false;//revealEl.length <= document.querySelectorAll('[class*=reveal-].is-revealed').length;
   };
 
   const elementIsVisible = (el, offset) => {
@@ -20,9 +20,9 @@ const ScrollReveal = React.forwardRef((props, ref) => {
     for (let i = 0; i < revealEl.length; i++) {
       let el = revealEl[i];
       let revealDelay = el.getAttribute('data-reveal-delay');
-      let revealOffset = (el.getAttribute('data-reveal-offset') ? el.getAttribute('data-reveal-offset') : '200');
+      let revealOffset = (el.getAttribute('data-reveal-offset') ? el.getAttribute('data-reveal-offset') : '50');
       let listenedEl = (el.getAttribute('data-reveal-container') ? el.closest(el.getAttribute('data-reveal-container')) : el);
-      if (elementIsVisible(listenedEl, revealOffset) && !el.classList.contains('is-revealed')) {
+      if (elementIsVisible(listenedEl, revealOffset)) {
         if (revealDelay && revealDelay !== 0) {
           setTimeout(function () {
             el.classList.add('is-revealed');
@@ -30,6 +30,8 @@ const ScrollReveal = React.forwardRef((props, ref) => {
         } else {
           el.classList.add('is-revealed');
         }
+      }else if(el.classList.contains('is-revealed') && !elementIsVisible(listenedEl, revealOffset)){
+        el.classList.remove('is-revealed');
       }
     }
   };
