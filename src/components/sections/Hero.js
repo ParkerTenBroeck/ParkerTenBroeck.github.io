@@ -135,7 +135,7 @@ const Hero = ({
             <h4 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
               Parker TenBroeck
             </h4>
-            <div className="container" style={{'paddingLeft':'32px', 'paddingRight':'32px'}}>
+            <div className="container">
               <p class="text-xs reveal-from-bottom" data-reveal-delay="400" style={{'margin-bottom':'16px','display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
                 <svg style={{'display': 'block','marginRight':'8px','marginLeft':'0px','height': '100%'}} 
                      stroke="currentColor" 

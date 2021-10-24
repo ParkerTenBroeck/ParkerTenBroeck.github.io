@@ -28,6 +28,19 @@
 	}
 }
 
+
+.hero-content{
+	padding-left:32px;
+	padding-right:32px;
+}
+
+@include media( '<medium' ) {	
+	.hero-content{
+		padding-left:0px;
+		padding-right:0px;
+	}
+}
+
 @include media( '<=medium' ) {
 
 	.hero {
