@@ -15,7 +15,7 @@ const propTypes = {
 const defaultProps = {
   navPosition: '',
   hideNav: false,
-  hideSignin: false,
+  hideSignin: true,
   bottomOuterDivider: false,
   bottomDivider: false
 }
@@ -87,8 +87,9 @@ const Header = ({
             bottomDivider && 'has-bottom-divider'
           )}>
           <div className="site-header-inner" >
-              <Link style={{"margin-right":"80px", "white-space":"nowrap"}} className="text-xs" to="/" onClick={closeMenu}>Parker TenBroeck</Link>
+              <Link style={{"whiteSpace":"nowrap"}} className="text-xs" to="/" onClick={closeMenu}>Parker TenBroeck</Link>
           </div>
+          <div className="header-spacer"/>
           {!hideNav &&
             <>
               <button

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Image from '../../elements/Image';
 
 const propTypes = {
-  radius: PropTypes.string,
+  radius: PropTypes.number,
   borderWidth: PropTypes.string,
   borderColor: PropTypes.string
 }
@@ -41,7 +41,6 @@ const LogoRound = ({
             alt="Open"
             width={radius}
             height={radius}
-            style={borderColor ? {'border-color':borderColor} : null, borderWidth ? {'border-width':borderWidth} : null}
             class="logo-round" />
         </Link>
       </h1>
