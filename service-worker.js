@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://parkertenbroeck.com/Actions-Test/precache-manifest.2c56da85b7cda5d06ea5c036fd2295ce.js"
+  "https://parkertenbroeck.com/Actions-Test/precache-manifest.37fd6489dc059f5e8217ddf699916bdb.js"
 );
 
 self.addEventListener('message', (event) => {
