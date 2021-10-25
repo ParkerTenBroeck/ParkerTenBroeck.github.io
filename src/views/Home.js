@@ -3,18 +3,18 @@ import React from 'react';
 import Hero from '../components/sections/Hero';
 import SkillTiles from '../components/sections/SkillTiles';
 import FeaturesSplit from '../components/sections/FeaturesSplit';
-import Testimonial from '../components/sections/Testimonial';
-import Cta from '../components/sections/Cta';
+import ProjectTiles from '../components/sections/ProjectTiles';
+import Contact from '../components/sections/Contact';
 
 const Home = () => {
 
   return (
     <>
-      <Hero className="illustration-section-01" />
-      <SkillTiles />
-      <FeaturesSplit invertMobile imageFill className="illustration-section-02" />
-      <Testimonial topDivider />
-      <Cta split />
+      <Hero id="about" className="illustration-section-01" />
+      <SkillTiles id="skills" />
+      <FeaturesSplit id="projects" invertMobile imageFill className="illustration-section-02" />
+      <ProjectTiles topDivider />
+      <Contact id="contact" split />
     </>
   );
 }

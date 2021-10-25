@@ -5,6 +5,10 @@ import Logo from './partials/Logo';
 import FooterNav from './partials/FooterNav';
 import FooterSocial from './partials/FooterSocial';
 
+
+import SmoothScrolling from 'smooth-scroll'
+var scroll = new SmoothScrolling('a[href*=\"#\"]');
+
 const propTypes = {
   topOuterDivider: PropTypes.bool,
   topDivider: PropTypes.bool

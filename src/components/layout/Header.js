@@ -116,16 +116,16 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>About</Link>
+                      <Link data-scroll to="/#about" onClick={closeMenu}>About</Link>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Skills</Link>
+                      <Link data-scroll to="/#skills" onClick={closeMenu}>Skills</Link>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Projects</Link>
+                      <Link data-scroll to="/#projects" onClick={closeMenu}>Projects</Link>
                     </li>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Contact</Link>
+                      <Link data-scroll to="/#contact" onClick={closeMenu}>Contact</Link>
                     </li>
                   </ul>
                   {!hideSignin &&
