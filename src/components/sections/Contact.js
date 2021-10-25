@@ -91,17 +91,17 @@ const contact = ({
               </p>
           </div>
           <div className="contact-action">
-            <Input className='mb-16' style={{'borderRadius':'8px'}} id="newsletter" type="string" label="Subscribe" labelHidden placeholder="Your Name">
+            <Input className='mb-16' style={{'borderRadius':'8px'}} id="contact-name" type="string" label="Subscribe" labelHidden placeholder="Your Name">
 
             </Input>
-            <Input className='mb-16' style={{'borderRadius':'8px'}} id="newsletter" type="email" label="Subscribe" labelHidden placeholder="Your Email">
+            <Input className='mb-16' style={{'borderRadius':'8px'}} id="contact-email" type="email" label="Subscribe" labelHidden placeholder="Your Email">
 
             </Input>
-            <Input className='mb-16' style={{'borderRadius':'8px'}} id="newsletter" type="string" label="Subscribe" labelHidden placeholder="Subject">
+            <Input className='mb-16' style={{'borderRadius':'8px'}} id="contact-subject" type="string" label="Subscribe" labelHidden placeholder="Subject">
             </Input>
-            <TextArea className='mb-16' type='textarea' style={{'justifyContent':'top','minHeight':'96px','borderRadius':'8px'}} id="newsletter" size='xl' type="string" label="Subscribe" labelHidden placeholder="Message">
+            <TextArea className='mb-16' type='textarea' style={{'justifyContent':'top','minHeight':'96px','borderRadius':'8px'}} id="contact-message" size='xl' type="string" label="Subscribe" labelHidden placeholder="Message">
             </TextArea>
-            <Button style={{'width':'100%', 'borderRadius':'8px'}}id="newsletter" color="secondary" label="Subscribe" labelHidden>
+            <Button onClick={emailTimeBaby}  style={{'width':'100%', 'borderRadius':'8px'}} color="secondary" label="Subscribe" labelHidden>
               Send a message
             </Button>
           </div>
@@ -109,6 +109,29 @@ const contact = ({
       </div>
     </section>
   );
+}
+
+function emailTimeBaby(){
+  var name = document.getElementById('contact-name').value;
+  var email = document.getElementById('contact-email').value;
+  var subject = document.getElementById('contact-subject').value;
+  var message = document.getElementById('contact-message').value;
+  actuallySendEmail(name, email, subject, message);
+}
+
+function actuallySendEmail(name, email, subject, message){
+  var payload = {"name": escape(name), "email": escape(email), "subject":escape(subject), "message":escape(message)};
+  console.log(payload);
+
+  var xhr = new XMLHttpRequest();
+  var request = "mailto:parkertenbroeck@gmail.com?subject="+
+    payload['subject']+":Contact%20Request%20From%20'" + 
+    payload['name'] + "'%20With%20Contact%20Email%20'"+ 
+    payload['email']+"'&body=" + 
+    payload['message'];
+  xhr.open("POST", request, true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.send();
 }
 
 contact.propTypes = propTypes;
