@@ -47,7 +47,7 @@
     li {
 
 		+ .header-button {
-			margin-left: $header-nav--padding-h;
+			margin-left: $header-nav--padding-sh;
 		}
     }
 
@@ -153,5 +153,26 @@
 
 	.site-header-inner {
 		height: $header-height__desktop;
+	}
+}
+
+
+
+@include media('<780px'){
+	.header-nav {
+		li {
+	
+			+ .header-button {
+				margin-left: $header-nav--padding-sh;
+			}
+		}
+	
+		a:not(.button) {
+			padding: 0 $header-nav--padding-sh;
+		}
+	
+		a.button {
+			margin-left: $header-nav--padding-sh;
+		}
 	}
 }
