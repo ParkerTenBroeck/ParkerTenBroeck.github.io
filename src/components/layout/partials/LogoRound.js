@@ -37,7 +37,7 @@ const LogoRound = ({
       <h1 className="m-0">
         <Link to="/">
           <Image
-            src={require('./../../../assets/images/profile.jpg')}
+            src={require('./../../../assets/images/profile.jpg').default}
             alt="Open"
             width={radius}
             height={radius}

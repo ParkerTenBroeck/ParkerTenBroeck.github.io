@@ -117,7 +117,7 @@ const Header = ({
                     )}>
                     <li>
                       
-                      <Link data-scroll to="/#about" style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}} data-scroll onClick={closeMenu}>
+                      <Link data-scroll to="/#about" style={{'display':'flex', 'justifyContent':'flexStart', 'alignItems':'center'}} onClick={closeMenu}>
                         <span>
                           <svg className="mr-8"
                                style={{'minWidth':'16px'}}
@@ -136,7 +136,7 @@ const Header = ({
                       </Link>
                     </li>
                     <li>
-                      <Link data-scroll to="/#skills" style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}} data-scroll onClick={closeMenu}>
+                      <Link data-scroll to="/#skills" style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}} onClick={closeMenu}>
                         <span>
                           <svg className="mr-8"
                                style={{'minWidth':'16px'}}
@@ -155,7 +155,7 @@ const Header = ({
                       </Link>
                     </li>
                     <li>
-                      <Link data-scroll to="/#projects" style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}} data-scroll onClick={closeMenu}>
+                      <Link data-scroll to="/#projects" style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}} onClick={closeMenu}>
                         <span>
                           <svg className="mr-8"
                                 style={{'minWidth':'16px'}}

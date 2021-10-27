@@ -31,7 +31,7 @@ const FooterSocial = ({
     >
       <ul style={wide ? {'justify-content':'space-between'} : null} className='list-reset'>
         <li>
-          <a class="link" href="mailto:parkertenbroeck@gmail.com" target="_blank" title="Email" rel="noreferrer">
+          <a class="link" href="mailto:parkertenbroeck@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
             <svg 
             stroke="currentColor" 
             fill="currentColor" 

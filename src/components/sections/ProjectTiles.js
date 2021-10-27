@@ -15,7 +15,7 @@ const defaultProps = {
 const ProjectTile = ({title, description , image, ...props}) => (
   <div className="tiles-item reveal-from-bottom">
     <div className="project-tile-item-inner tiles-item-inner">
-      <Image className="project-tile-item-image" src={require("./../../assets/images/features-split-image-01.png")}/>
+      <Image className="project-tile-item-image" src={image !=null ? image : require("./../../assets/images/features-split-image-01.png").default}/>
       <div className="project-tile-item-title text-xxs mt-32 mb-0 has-top-divider">
         <span className="project-tile-item-name text-color-high">{title}</span>
       </div>
@@ -23,7 +23,7 @@ const ProjectTile = ({title, description , image, ...props}) => (
         <p className="text-xxxs mb-0">{description}</p>
       </div>
       <span  className="project-tile-item-link text-xxxs project-tile-item-title">
-        <a>See More ➜</a>
+        <buttom>See More ➜</buttom>
       </span>
   </div>
 </div>

@@ -99,7 +99,7 @@ const contact = ({
             </Input>
             <Input className='mb-16' style={{'borderRadius':'8px'}} id="contact-subject" type="string" label="Subscribe" labelHidden placeholder="Subject">
             </Input>
-            <TextArea className='mb-16' type='textarea' style={{'justifyContent':'top','minHeight':'96px','borderRadius':'8px'}} id="contact-message" size='xl' type="string" label="Subscribe" labelHidden placeholder="Message">
+            <TextArea className='mb-16' style={{'justifyContent':'top','minHeight':'96px','borderRadius':'8px'}} id="contact-message" size='xl' type="string" label="Subscribe" labelHidden placeholder="Message">
             </TextArea>
             <Button onClick={emailTimeBaby}  style={{'width':'100%', 'borderRadius':'8px'}} color="secondary" label="Subscribe" labelHidden>
               Send a message
@@ -123,7 +123,6 @@ function actuallySendEmail(name, email, subject, message){
   var payload = {"name": escape(name), "email": escape(email), "subject":escape(subject), "message":escape(message)};
   console.log(payload);
 
-  var xhr = new XMLHttpRequest();
   var request = "mailto:parkertenbroeck@gmail.com?subject="+
     payload['subject']+":Contact%20Request%20From%20'" + 
     payload['name'] + "'%20Best%20Email%20'"+ 
