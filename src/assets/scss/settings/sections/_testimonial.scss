@@ -1,12 +1,15 @@
-// Testimonial (core/sections/_testimonial.scss) ---------------
-$testimonial--padding-t__mobile: 		null;		// testimonial, top padding (mobile)
-$testimonial--padding-b__mobile: 		null;		// testimonial, bottom padding (mobile)
-$testimonial--padding-t__desktop: 		null;		// testimonial, top padding (desktop)
-$testimonial--padding-b__desktop: 		null;		// testimonial, bottom padding (desktop)
-$testimonial-header--padding__mobile: 	null;		// testimonial header, bottom padding (mobile)
-$testimonial-header--padding__desktop:	null;		// testimonial header, bottom padding (desktop)
-$testimonial-items--padding__mobile: 	null;		// padding between testimonial items (mobile)
-$testimonial-items--padding__desktop: 	null;		// padding between testimonial items (desktop)
-$testimonial-item--width: 				344px;		// testimonial item, width
-$testimonial-item--inner-padding-v: 	24px;		// testimonial item, inner top and bottom padding (it inherits $tiles-item--inner-padding-v unless you replace null with a new value)
-$testimonial-item--inner-padding-h: 	32px;		// testimonial item, inner left and right padding (it inherits $tiles-item--inner-padding-h unless you replace null with a new value)
+// project-tile (core/sections/_project-tile.scss) ---------------
+$project-tile--padding-t__mobile: 		    null;		// project-tile, top padding (mobile)
+$project-tile--padding-b__mobile: 		    null;		// project-tile, bottom padding (mobile)
+$project-tile--padding-t__desktop: 		    20px;		// project-tile, top padding (desktop)
+$project-tile--padding-b__desktop: 		    null;		// project-tile, bottom padding (desktop)
+$project-tile-header--padding__mobile: 	    null;		// project-tile header, bottom padding (mobile)
+$project-tile-header--padding__desktop:	    null;		// project-tile header, bottom padding (desktop)
+$project-tile-items--padding__mobile: 	    null;		// padding between project-tile items (mobile)
+$project-tile-items--padding__desktop: 	    null;		// padding between project-tile items (desktop)
+$project-tile-item--width-xl: 			    22.5%;		// project-tile item, width
+$project-tile-item--width: 				    200px;		// project-tile item, width
+$project-tile-item--width-m: 			    325px;		// project-tile item, width
+$project-tile-item--width-s: 			    100%;		// project-tile item, width
+$project-tile-item--inner-padding-v: 	    16px;		// project-tile item, inner top and bottom padding (it inherits $tiles-item--inner-padding-v unless you replace null with a new value)
+$project-tile-item--inner-padding-h: 	    16px;		// project-tile item, inner left and right padding (it inherits $tiles-item--inner-padding-h unless you replace null with a new value)

@@ -126,12 +126,11 @@ function actuallySendEmail(name, email, subject, message){
   var xhr = new XMLHttpRequest();
   var request = "mailto:parkertenbroeck@gmail.com?subject="+
     payload['subject']+":Contact%20Request%20From%20'" + 
-    payload['name'] + "'%20With%20Contact%20Email%20'"+ 
+    payload['name'] + "'%20Best%20Email%20'"+ 
     payload['email']+"'&body=" + 
     payload['message'];
-  xhr.open("POST", request, true);
-  xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.send();
+
+    window.open(request);
 }
 
 contact.propTypes = propTypes;

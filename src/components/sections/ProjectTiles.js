@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
+import Image from '../elements/Image';
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -11,7 +12,24 @@ const defaultProps = {
   ...SectionTilesProps.defaults
 }
 
-const Testimonial = ({
+const ProjectTile = ({title, description , image, ...props}) => (
+  <div className="tiles-item reveal-from-bottom">
+    <div className="project-tile-item-inner tiles-item-inner">
+      <Image className="project-tile-item-image" src={require("./../../assets/images/features-split-image-01.png")}/>
+      <div className="project-tile-item-title text-xxs mt-32 mb-0 has-top-divider">
+        <span className="project-tile-item-name text-color-high">{title}</span>
+      </div>
+      <div className="project-tile-item-content">
+        <p className="text-xxxs mb-0">{description}</p>
+      </div>
+      <span  className="project-tile-item-link text-xxxs project-tile-item-title">
+        <a>See More ➜</a>
+      </span>
+  </div>
+</div>
+);
+
+const ProjectTiles = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -24,7 +42,7 @@ const Testimonial = ({
 }) => {
 
   const outerClasses = classNames(
-    'testimonial section',
+    'project-tile section',
     topOuterDivider && 'has-top-divider',
     bottomOuterDivider && 'has-bottom-divider',
     hasBgColor && 'has-bg-color',
@@ -33,7 +51,7 @@ const Testimonial = ({
   );
 
   const innerClasses = classNames(
-    'testimonial-inner section-inner',
+    'project-tile-inner section-inner',
     topDivider && 'has-top-divider',
     bottomDivider && 'has-bottom-divider'
   );
@@ -44,8 +62,7 @@ const Testimonial = ({
   );
 
   const sectionHeader = {
-    title: 'Customer testimonials',
-    paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
+    title: 'Projects',
   };
 
   return (
@@ -58,57 +75,34 @@ const Testimonial = ({
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
 
-            <div className="tiles-item reveal-from-right" data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                    — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum cillum dolore eu fugiat.
-                      </p>
-                </div>
-                <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Roman Level</span>
-                  <span className="text-color-low"> / </span>
-                  <span className="testimonial-item-link">
-                    <a href="#0">AppName</a>
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-bottom">
-              <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                    — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum cillum dolore eu fugiat.
-                      </p>
-                </div>
-                <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Diana Rynzhuk</span>
-                  <span className="text-color-low"> / </span>
-                  <span className="testimonial-item-link">
-                    <a href="#0">AppName</a>
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="tiles-item reveal-from-left" data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                    — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum cillum dolore eu fugiat.
-                      </p>
-                </div>
-                <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Ben Stafford</span>
-                  <span className="text-color-low"> / </span>
-                  <span className="testimonial-item-link">
-                    <a href="#0">AppName</a>
-                  </span>
-                </div>
-              </div>
-            </div>
-
+            <ProjectTile 
+              title="MIPS Assembler" 
+              description="this is a crazy wacky bazzar thing that i can write about for AGES but i wont because then maybe just maybe this wont work lets home that ia can do this bla bla bal"/>
+            
+            <ProjectTile 
+              title="MIPS Assembler" 
+              description="this is a crazy wacky bazzar thing that i can write about for AGES but i wont because then maybe just maybe this wont work lets home that ia can do this bla bla bal"/>
+            
+            <ProjectTile 
+              title="MIPS Assembler" 
+              description="this is a crazy wacky bazzar thing that i can write about for AGES but i wont because then maybe just maybe this wont work lets home that ia can do this bla bla bal"/>
+            <ProjectTile 
+              title="MIPS Assembler" 
+              description="this is a crazy wacky bazzar thing that i can write about for AGES but i wont because then maybe just maybe this wont work lets home that ia can do this bla bla bal"/>
+            
+            <ProjectTile 
+              title="MIPS Assembler" 
+              description="this is a crazy wacky bazzar thing that i can write about for AGES but i wont because then maybe just maybe this wont work lets home that ia can do this bla bla bal"/>
+            <ProjectTile 
+              title="MIPS Assembler" 
+              description="this is a crazy wacky bazzar thing that i can write about for AGES but i wont because then maybe just maybe this wont work lets home that ia can do this bla bla bal"/>
+            <ProjectTile 
+              title="MIPS Assembler" 
+              description="this is a crazy wacky bazzar thing that i can write about for AGES but i wont because then maybe just maybe this wont work lets home that ia can do this bla bla bal"/>
+            <ProjectTile 
+              title="MIPS Assembler" 
+              description="this is a crazy wacky bazzar thing that i can write about for AGES but i wont because then maybe just maybe this wont work lets home that ia can do this bla bla bal"/>
+          
           </div>
         </div>
       </div>
@@ -116,7 +110,7 @@ const Testimonial = ({
   );
 }
 
-Testimonial.propTypes = propTypes;
-Testimonial.defaultProps = defaultProps;
+ProjectTiles.propTypes = propTypes;
+ProjectTiles.defaultProps = defaultProps;
 
-export default Testimonial;
+export default ProjectTiles;

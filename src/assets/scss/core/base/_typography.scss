@@ -66,6 +66,11 @@ small,
 	@include font-size(xxs);
 }
 
+.text-xxxs {
+	font-size: 13px;
+	line-height: 18px;
+}
+
 figcaption {
 	@include font-size(figcap);
 	@include font-weight(figcap);
