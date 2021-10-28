@@ -60,48 +60,48 @@ const contact = ({
             <p className="mb-32">
               Fill in the form to get in touch.
             </p>
-              <p class="text-xs mb-32 ml-8" style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
+              <p className="text-xs mb-32 ml-8" style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
                 <svg style={{'display': 'block','marginRight':'8px','marginLeft':'0px','height': '100%'}} 
                      stroke="currentColor" 
                      fill="currentColor" 
-                     stroke-width="0" 
+                     strokeWidth="0" 
                      viewBox="0 0 12 16" 
                      height="16px" 
                      width="16px" 
                      xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z">
+                  <path fillRule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z">
                   </path>
                 </svg>
                 <span>Ontario, Canada</span>
               </p>
-              <p class="text-xs mb-0 ml-8" style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
+              <p className="text-xs mb-0 ml-8" style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
               <svg style={{'minWidth':'16px','display': 'block','marginRight':'8px','marginLeft':'0px','height': '100%'}} 
                    stroke="currentColor" 
                    fill="currentColor" 
-                   stroke-width="0" 
+                   strokeWidth="0" 
                    viewBox="0 0 512 512" 
                    height="16px" 
                    width="16px" 
                    xmlns="http://www.w3.org/2000/svg">
-                <rect width="416" height="320" x="48" y="96" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" rx="40" ry="40"></rect>
-                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112">
+                <rect width="416" height="320" x="48" y="96" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" rx="40" ry="40"></rect>
+                <path fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M112 160l144 112 144-112">
                 </path>
                 </svg>
                 <span>parkertenbroeck@gmail.com</span>
               </p>
           </div>
           <div className="contact-action">
-            <Input className='mb-16' style={{'borderRadius':'8px'}} id="contact-name" type="string" label="Subscribe" labelHidden placeholder="Your Name">
+            <Input className='mb-16' style={{'borderRadius':'8px'}} id="contact-name" label="Subscribe" labelHidden placeholder="Your Name">
 
             </Input>
-            <Input className='mb-16' style={{'borderRadius':'8px'}} id="contact-email" type="email" label="Subscribe" labelHidden placeholder="Your Email">
+            <Input className='mb-16' style={{'borderRadius':'8px'}} id="contact-email" label="Subscribe" labelHidden placeholder="Your Email">
 
             </Input>
-            <Input className='mb-16' style={{'borderRadius':'8px'}} id="contact-subject" type="string" label="Subscribe" labelHidden placeholder="Subject">
+            <Input className='mb-16' style={{'borderRadius':'8px'}} id="contact-subject"  label="Subscribe" labelHidden placeholder="Subject">
             </Input>
-            <TextArea className='mb-16' style={{'justifyContent':'top','minHeight':'96px','borderRadius':'8px'}} id="contact-message" size='xl' type="string" label="Subscribe" labelHidden placeholder="Message">
+            <TextArea className='mb-16' style={{'justifyContent':'top','minHeight':'96px','borderRadius':'8px'}} id="contact-message" size='xl'label="Subscribe" labelHidden placeholder="Message">
             </TextArea>
-            <Button onClick={emailTimeBaby}  style={{'width':'100%', 'borderRadius':'8px'}} color="secondary" label="Subscribe" labelHidden>
+            <Button onClick={emailTimeBaby}  style={{'width':'100%', 'borderRadius':'8px'}} color="secondary">
               Send a message
             </Button>
           </div>

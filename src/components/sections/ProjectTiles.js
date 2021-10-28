@@ -23,7 +23,7 @@ const ProjectTile = ({title, description , image, ...props}) => (
         <p className="text-xxxs mb-0">{description}</p>
       </div>
       <span  className="project-tile-item-link text-xxxs project-tile-item-title">
-        <buttom>See More ➜</buttom>
+        <span>See More ➜</span>
       </span>
   </div>
 </div>

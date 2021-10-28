@@ -121,39 +121,39 @@ const Hero = ({
               Parker TenBroeck
             </h4>
             <div className="container">
-              <p class="text-xs reveal-from-bottom" data-reveal-delay="400" style={{'margin-bottom':'16px','display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
+              <p className="text-xs reveal-from-bottom" data-reveal-delay="400" style={{'marginBottom':'16px','display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
                 <svg style={{'display': 'block','marginRight':'8px','marginLeft':'0px','height': '100%'}} 
                      stroke="currentColor" 
                      fill="none" 
-                     stroke-width="0" 
+                     strokeWidth="0" 
                      viewBox="0 0 24 24" 
-                     class="text-gray-700 dark:text-gray-500 mr-4 md:mt-0.5" 
+                     className="text-gray-700 dark:text-gray-500 mr-4 md:mt-0.5" 
                      height="1em" 
                      width="1em" 
                      xmlns="http://www.w3.org/2000/svg">
                        <path d="M14 11H10V13H14V11Z" fill="currentColor">
                          </path>
-                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7 5V4C7 2.89545 7.89539 2 9 2H15C16.1046 2 17 2.89545 17 4V5H20C21.6569 5 23 6.34314 23 8V18C23 19.6569 21.6569 21 20 21H4C2.34314 21 1 19.6569 1 18V8C1 6.34314 2.34314 5 4 5H7ZM9 4H15V5H9V4ZM4 7C3.44775 7 3 7.44769 3 8V14H21V8C21 7.44769 20.5522 7 20 7H4ZM3 18V16H21V18C21 18.5523 20.5522 19 20 19H4C3.44775 19 3 18.5523 3 18Z" fill="currentColor">
+                         <path fillRule="evenodd" clipRule="evenodd" d="M7 5V4C7 2.89545 7.89539 2 9 2H15C16.1046 2 17 2.89545 17 4V5H20C21.6569 5 23 6.34314 23 8V18C23 19.6569 21.6569 21 20 21H4C2.34314 21 1 19.6569 1 18V8C1 6.34314 2.34314 5 4 5H7ZM9 4H15V5H9V4ZM4 7C3.44775 7 3 7.44769 3 8V14H21V8C21 7.44769 20.5522 7 20 7H4ZM3 18V16H21V18C21 18.5523 20.5522 19 20 19H4C3.44775 19 3 18.5523 3 18Z" fill="currentColor">
                        </path>
                        </svg>
                 <span className="typeWritter"></span>
                 <span className="blink">|</span>
               </p>
-              <p class="text-xs reveal-from-bottom" data-reveal-delay="400" style={{'margin-bottom':'16px','display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
+              <p className="text-xs reveal-from-bottom" data-reveal-delay="400" style={{'marginBottom':'16px','display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
                 <svg style={{'display': 'block','marginRight':'8px','marginLeft':'0px','height': '100%'}} 
                      stroke="currentColor" 
                      fill="currentColor" 
-                     stroke-width="0" 
+                     stroke-size="0" 
                      viewBox="0 0 12 16" 
                      height="1em" 
                      width="1em" 
                      xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z">
+                  <path fillRule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z">
                   </path>
                 </svg>
                 <span>Ontario, Canada</span>
               </p>
-              <p className="text-xs m-0 mb-32 reveal-from-bottom" style={{'text-align':'left'}} data-reveal-delay="600">
+              <p className="text-xs m-0 mb-32 reveal-from-bottom" style={{'textAlign':'left'}} data-reveal-delay="600">
                 My name is Parker TenBroeck. I'm an aspiring Software Developer, student, and cat lover.
                 I thoroughly enjoy writing in Java, C and C++ with well-developed skills in JavaScript, Assembly(MIPS) and HTML. 
                 My programming experience is predominantly from personal projects, with school work making up the rest.

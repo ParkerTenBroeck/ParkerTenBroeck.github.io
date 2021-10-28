@@ -6,20 +6,17 @@ import Image from '../../elements/Image';
 
 const propTypes = {
   radius: PropTypes.number,
-  borderWidth: PropTypes.string,
   borderColor: PropTypes.string
 }
 
 const defaultProps = {
-  radius: '128px',
-  borderWidth: '4px',
+  radius: 128,
   borderColor: null
 }
 
 const LogoRound = ({
   className,
   radius,
-  borderWidth,
   borderColor,
   ...props
 }) => {
@@ -41,7 +38,7 @@ const LogoRound = ({
             alt="Open"
             width={radius}
             height={radius}
-            class="logo-round" />
+            className="logo-round"/>
         </Link>
       </h1>
     </div>

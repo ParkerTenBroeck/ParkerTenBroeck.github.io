@@ -29,13 +29,13 @@ const FooterSocial = ({
       {...props}
       className={classes}
     >
-      <ul style={wide ? {'justify-content':'space-between'} : null} className='list-reset'>
+      <ul style={wide ? {'justifyContent':'spaceBetween'} : null} className='list-reset'>
         <li>
-          <a class="link" href="mailto:parkertenbroeck@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
+          <a className="link" href="mailto:parkertenbroeck@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
             <svg 
             stroke="currentColor" 
             fill="currentColor" 
-            stroke-width="0" 
+            strokeWidth="0" 
             version="1.1" 
             viewBox="0 0 16 16" 
             height={iconSize} 
