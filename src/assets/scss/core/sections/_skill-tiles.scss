@@ -1,5 +1,15 @@
 .skill-tiles {
 
+	//animation
+	.tiles-item-inner {
+		transition: transform 250ms;
+	}
+
+	.tiles-item-inner:hover{
+		transform:scale(1.05, 1.05);
+		//cursor: pointer;
+	}
+
 	.section-inner {
 		padding-top: $skill-tiles--padding-t__mobile;
 		padding-bottom: $skill-tiles--padding-b__mobile;
