@@ -54,6 +54,13 @@
 	}
 }
 
+.project-tile-item-image{
+	width:100%;
+	height:150px;
+	transition: 0.3s ease;
+	object-fit: cover!important;
+}
+
 .project-tile-item-content {
 	flex-grow: 1;
 	text-align: justify;
@@ -101,11 +108,15 @@
 @include media('<750px'){
 	.project-tile {
 		.tiles-item {
+			max-width: 600px!important;
 			margin-left: 42px;
 			margin-right: 42px;
 			flex-basis: $project-tile-item--width-s;
 			max-width: $project-tile-item--width-s;
 		}
+	}
+	.project-tile-item-image{
+		height:220px;
 	}
 }
 

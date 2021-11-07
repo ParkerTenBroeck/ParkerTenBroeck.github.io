@@ -5,6 +5,23 @@
 	}
 }
 
+//animation
+.tiles-item-inner {
+	transition: transform 250ms;
+}
+
+.tiles-item-inner:hover{
+	transform:scale(1.05, 1.05);
+	//cursor: pointer;
+}
+
+.project-tile-line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+}
+
 .project-tile-item-content {
     position: relative;
 }

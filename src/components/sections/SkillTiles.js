@@ -15,8 +15,8 @@ const defaultProps = {
 const SkillCard = ({iconSize, image, text, revealDelay, ...props}) => (
     <div className="tiles-item reveal-from-bottom" data-reveal-delay={revealDelay}>
     <div className="tiles-item-inner">
-      <div className="features-tiles-item-header">
-        <div className="features-tiles-item-image ">
+      <div className="skill-tiles-item-header">
+        <div className="skill-tiles-item-image ">
           <Image
             src={ image != null ?  image.default : require('./../../assets/images/skills/skill-tile-icon-java.svg')}
             alt={image.alt}
@@ -24,7 +24,7 @@ const SkillCard = ({iconSize, image, text, revealDelay, ...props}) => (
             height={iconSize} />
         </div>
       </div>
-      <div className="features-tiles-item-content">
+      <div className="skill-tiles-item-content">
         <p className="text-xs mt-0 mb-0">
           {text}
         </p>
@@ -47,7 +47,7 @@ const SkillTiles = ({
 }) => {
 
   const outerClasses = classNames(
-    'features-tiles section',
+    'skill-tiles section',
     topOuterDivider && 'has-top-divider',
     bottomOuterDivider && 'has-bottom-divider',
     hasBgColor && 'has-bg-color',
@@ -56,7 +56,7 @@ const SkillTiles = ({
   );
 
   const innerClasses = classNames(
-    'features-tiles-inner section-inner pt-0',
+    'skill-tiles-inner section-inner pt-0',
     topDivider && 'has-top-divider',
     bottomDivider && 'has-bottom-divider'
   );
