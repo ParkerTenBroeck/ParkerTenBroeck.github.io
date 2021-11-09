@@ -2,6 +2,7 @@ import React,{ useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Button from '../elements/Button';
+import { Scrollbars } from 'react-custom-scrollbars';
 
 const propTypes = {
   children: PropTypes.node,
@@ -76,9 +77,11 @@ const SideDrawer = ({
                 </span>
             </div>
             }
-            <div className="side-drawer-content"> 
-                {children}
-            </div>
+            <Scrollbars >
+                <div className="side-drawer-content"> 
+                    {children}
+                </div> 
+            </Scrollbars>
             { includeBottom &&
             <div class="side-drawer-bottom">
                 <Button onClick={handleClose} class="text-xs" size="sm" color="primary">Close</Button>

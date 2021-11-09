@@ -3,7 +3,6 @@ import { useLocation, Switch } from 'react-router-dom';
 import AppRoute from './utils/AppRoute';
 import ScrollReveal from './utils/ScrollReveal';
 //import ReactGA from 'react-ga';
-
 // Layouts
 import LayoutDefault from './layouts/LayoutDefault';
 
@@ -37,12 +36,13 @@ const App = () => {
     <ScrollReveal
       ref={childRef}
       children={() => (
+        
         <Switch>
-          <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-          <AppRoute exact path="/Actions-Test" component={Home} layout={LayoutDefault} />
+            <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+            <AppRoute exact path="/Actions-Test" component={Home} layout={LayoutDefault} />
+            <AppRoute exact path="/resume" component={Resume} layout={LayoutDefault} />
+            <AppRoute exact path="/Actions-Test/resume" component={Resume} layout={LayoutDefault} />
           
-          <AppRoute exact path="/resume" component={Resume} layout={LayoutDefault} />
-          <AppRoute exact path="/Actions-Test/resume" component={Resume} layout={LayoutDefault} />
         </Switch>
       )} />
   );

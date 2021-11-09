@@ -41,7 +41,14 @@ const ProjectTile = ({title, description , image, ...props}) => {
 </div>
 <SideDrawer title={title} show={showD} handleClose={closeDrawer}>
   <div class="container mt-32 ml-32 mr-32 mb-32">
-    <p>{title}</p>
+    <p>{description}</p>
+    <p>{description}</p>
+    <p>{description}</p>
+    <p>{description}</p>
+    <p>{description}</p>
+    <p>{description}</p>
+    <p>{description}</p>
+    <p>{description}</p>
   </div>
 </SideDrawer>
 </>
