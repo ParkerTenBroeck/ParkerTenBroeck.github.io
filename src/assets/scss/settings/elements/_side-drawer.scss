@@ -1,0 +1,23 @@
+$side-drawer--bg: (
+	side-drawer: get-color(dark, 2),
+	side-drawer-outer: rgba(get-color(dark, 1), .88)
+);
+
+$side-drawer--min-width:			 		null;		// side-drawer min-width
+$side-drawer--max-width:			 		520px;		// side-drawer max-width
+$side-drawer-video--max-width:			    1024px;		// side-drawer video max-width
+$side-drawer--outer-padding-v__mobile: 	    16px;		// side-drawer, outer top and bottom padding (mobile)
+$side-drawer--outer-padding-v__desktop: 	48px;		// side-drawer, outer top and bottom padding (desktop)
+$side-drawer--inner-padding-v__mobile: 	    48px;		// side-drawer, inner top and bottom padding (mobile)
+$side-drawer--inner-padding-h__mobile: 	    16px;		// side-drawer, inner left and right padding (mobile)
+$side-drawer--inner-padding-v__desktop: 	64px;		// side-drawer, inner top and bottom padding (desktop)
+$side-drawer--inner-padding-h__desktop: 	32px;		// side-drawer, inner left and right padding (desktop)
+$side-drawer-close-icon--size: 			    16px;		// side-drawer close icon, width and height
+$side-drawer-close-icon--thickness: 		2px;		// side-drawer close icon, stroke width
+$side-drawer-close-icon--radius: 			null;		// side-drawer close icon, lines radius cap
+$side-drawer-close-position:				16px;		// icon distance from the top right of the side-drawer
+
+$side-drawer-title--thickness: 		        2px;		// side-drawer close icon, stroke width
+$side-drawer-title-position:				16px;		// icon distance from the top right of the side-drawer
+
+$bg--color: map-push($bg--color, $side-drawer--bg);
