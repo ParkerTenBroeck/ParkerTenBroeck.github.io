@@ -80,9 +80,9 @@ const SkillTiles = ({
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
             <SkillCard image={require("./../../assets/images/skills/skill-tile-icon-java.svg")} text="Java"/>
+            <SkillCard image={require("./../../assets/images/skills/skill-tile-icon-rust.svg")} text="Rust"/>
             <SkillCard image={require("./../../assets/images/skills/skill-tile-icon-c.svg")} text="C"/>
             <SkillCard image={require("./../../assets/images/skills/skill-tile-icon-cpp.svg")} text="C++"/>
-            <SkillCard image={require("./../../assets/images/skills/skill-tile-icon-bash.svg")} text="Bash"/>
             <SkillCard image={require("./../../assets/images/skills/skill-tile-icon-mips.svg")} text="MIPS"/>
             <SkillCard image={require("./../../assets/images/skills/skill-tile-icon-vhdl.svg")} text="VHDL"/>
             <SkillCard image={require("./../../assets/images/skills/skill-tile-icon-javascript.svg")} text="JavaScript"/>
