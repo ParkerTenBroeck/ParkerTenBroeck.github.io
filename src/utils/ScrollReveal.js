@@ -12,6 +12,7 @@ const ScrollReveal = React.forwardRef((props, ref) => {
   };
 
   const elementIsVisible = (el, offset) => {
+    //return true;//brus
     return (el.getBoundingClientRect().top <= viewportHeight - offset);
   };
 
@@ -45,6 +46,9 @@ const ScrollReveal = React.forwardRef((props, ref) => {
   useEffect(() => {
     if (typeof revealEl !== 'undefined' && revealEl.length > 0) {
       if (!checkComplete()) {
+        var test = document.getElementById("Main-ScrollBar");
+        test.addEventListener('scroll', handleScroll);
+        console.log(window);
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
       }
