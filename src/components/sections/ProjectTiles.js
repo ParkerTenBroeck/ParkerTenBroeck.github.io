@@ -13,8 +13,66 @@ const defaultProps = {
   ...SectionTilesProps.defaults
 }
 
+const SkillIcon = ({iconSize, image, text, color, size, offset, ...props}) => {
 
-const ProjectTile = ({title, description , image,gitlink, ...props}) => {
+  return (<>
+  <span class="mr-8" style={{backgroundColor:color == null ? "red" : color,borderRadius:"9999px", padding:"0 7px", whiteSpace: "nowrap"}}>
+    <span role="image">
+      <img    class="mr-4"
+              src={ image != null ?  image.default : require('./../../assets/images/skills/skill-tile-icon-java.svg')}
+              alt={image.alt}
+              width={size ==null ?"16px": size}
+              height={size ==null ?"16px": size}
+              style = {{display: "inline-block",
+                color: "inherit",
+                fontStyle: "normal",
+                lineHeight: "0",
+                textAlign: "center",
+                textTransform: "none",
+                verticalAlign:offset == null ? "-.050em" : offset}} 
+              />
+    </span>
+    <span class="text-xxxs" style={{verticalAlign: ".125em", color:"white"}}>
+      {text}
+    </span>
+  </span>
+  </>)
+}
+
+const AutoSkillIcon = ({skill,... props}) => {
+  switch (skill){
+    case "java":
+      return(<SkillIcon image={require("./../../assets/images/skills/skill-tile-icon-java.svg")} text="Java" color="#A5ABF9"/>)
+    case "rust":
+      return(<SkillIcon image={require("./../../assets/images/skills/skill-tile-icon-rust.svg")} text="Rust" color="#B7410E" size="22px"/>)
+    case "c":
+      return(<SkillIcon image={require("./../../assets/images/skills/skill-tile-icon-c.svg")} text="C" color="#7CBFFF"/>)
+    case "cpp":
+      return(<SkillIcon image={require("./../../assets/images/skills/skill-tile-icon-cpp.svg")} text="C++" color="#7CBFFF"/>)
+    case "mips":
+      return(<SkillIcon image={require("./../../assets/images/skills/skill-tile-icon-mips.svg")} text="MIPS" color="#43DB47"/>)
+    case "vhds":
+      return(<SkillIcon image={require("./../../assets/images/skills/skill-tile-icon-vhdl.svg")} text="VHDL"/>)
+    case "javascript":
+      return(<SkillIcon image={require("./../../assets/images/skills/skill-tile-icon-javascript.svg")} text="JavaScript" color="#AE9D14"/>)
+    case "html":
+      return(<SkillIcon image={require("./../../assets/images/skills/skill-tile-icon-html.svg")} text="HTML" color="#FF722A"/>)
+    case "css":
+      return(<SkillIcon image={require("./../../assets/images/skills/skill-tile-icon-css.svg")} text="CSS" color="#1E41B2"/>)
+    case "reactjs":
+      return(<SkillIcon image={require("./../../assets/images/skills/skill-tile-icon-reactjs.svg")} text="React.js"/>)
+    case "php":
+      return(<SkillIcon image={require("./../../assets/images/skills/skill-tile-icon-php.svg")} text="PHP" color="#A5ABF9"/>)
+    case "git":
+      return(<SkillIcon image={require("./../../assets/images/skills/skill-tile-icon-git.svg")} text="Git" color="#C13C1E"/>)
+    case "mysql":
+      return(<SkillIcon image={require("./../../assets/images/skills/skill-tile-icon-mysql.svg")} text="MySQL" color="#A5ABF9"/>)
+    default:
+      return(<></>)
+    }
+};
+
+const ProjectTile = ({title, description , image,gitlink,skills, ...props}) => {
   const [showD, setVisible2] = useState(false);
   const showDrawer = () => {
     setVisible2(showD ? false : true);
@@ -53,15 +111,23 @@ const ProjectTile = ({title, description , image,gitlink, ...props}) => {
     </div>
     </>
     }
+    {skills == null ? <></> :
+    <>
     <div className="top-border"></div>
     <div className="mt-16">
       <div className="mb-8">
         <span>Skills</span>
       </div>
       <div className="mb-16">
-
+      { 
+        skills.map((name) => ( 
+          <AutoSkillIcon skill={name}></AutoSkillIcon>
+        ))
+      }
       </div>
     </div>
+    </>
+    }
 
     {description == null ? <></> :
     <>
@@ -145,6 +211,7 @@ const ProjectTiles = ({
               image={require("./../../assets/images/projects/retargetable-assembler.jpg").default}
               title="CLike Compiler" 
               gitlink="https://github.com/ParkerTenBroeck/CLike"
+              skills = {["java","rust","c","cpp","mips","vhdl","javascript","html","css","react","php","git", "mysql"]}
               description="A simple compiler written in rust for a c-like language. This project w"/>  
             <ProjectTile 
               image={require("./../../assets/images/projects/retargetable-assembler.jpg").default}
