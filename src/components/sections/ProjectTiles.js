@@ -14,7 +14,7 @@ const defaultProps = {
 }
 
 
-const ProjectTile = ({title, description , image, ...props}) => {
+const ProjectTile = ({title, description , image,gitlink, ...props}) => {
   const [showD, setVisible2] = useState(false);
   const showDrawer = () => {
     setVisible2(showD ? false : true);
@@ -40,15 +40,55 @@ const ProjectTile = ({title, description , image, ...props}) => {
   </div>
 </div>
 <SideDrawer title={title} show={showD} handleClose={closeDrawer}>
-  <div class="container mt-32 ml-32 mr-32 mb-32">
-    <p>{description}</p>
-    <p>{description}</p>
-    <p>{description}</p>
-    <p>{description}</p>
-    <p>{description}</p>
-    <p>{description}</p>
-    <p>{description}</p>
-    <p>{description}</p>
+  <div class="container mt-24 ml-24 mr-24 mb-32" style={{width:"auto"}}>
+  {image == null ? <></> :
+    <>
+    <div className="mb-24">
+      <div className="mb-8">
+        <span>Images</span>
+      </div>
+      <div className="mb-16">
+        <Image className="side-drawer-item-image" src={image}/>
+      </div>
+    </div>
+    </>
+    }
+    <div className="top-border"></div>
+    <div className="mt-16">
+      <div className="mb-8">
+        <span>Skills</span>
+      </div>
+      <div className="mb-16">
+
+      </div>
+    </div>
+
+    {description == null ? <></> :
+    <>
+    <div className="top-border"></div>
+    <div className="mt-16">
+      <div className="mb-8">
+        <span>Description</span>
+      </div>
+      <div className="mb-16">
+        <p className="text-xs mb-16">{description}</p>
+      </div>
+    </div>
+    </>
+    }
+    {gitlink == null ? <></> :
+    <>
+    <div className="top-border"></div>
+      <div className="mt-16">
+        <div className="mb-8">
+          <span>Github</span>
+        </div>
+        <div className="mb-16">
+          <a style={{color:"#177ddc",textDecoration:"underline"}} className="text-xxs mb-16" href={gitlink}>{gitlink}</a>
+        </div>
+      </div>
+      </>
+    }
   </div>
 </SideDrawer>
 </>
@@ -101,6 +141,11 @@ const ProjectTiles = ({
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
 
+          <ProjectTile 
+              image={require("./../../assets/images/projects/retargetable-assembler.jpg").default}
+              title="CLike Compiler" 
+              gitlink="https://github.com/ParkerTenBroeck/CLike"
+              description="A simple compiler written in rust for a c-like language. This project w"/>  
             <ProjectTile 
               image={require("./../../assets/images/projects/retargetable-assembler.jpg").default}
               title="Retargetable Assembler" 
