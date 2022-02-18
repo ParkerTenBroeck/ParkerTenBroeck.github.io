@@ -209,7 +209,7 @@ const ProjectTiles = ({
           <div className={tilesClasses}>
 
           <ProjectTile 
-              image={require("./../../assets/images/projects/retargetable-assembler.jpg").default}
+              image={require("./../../assets/images/projects/clike-compiler.jpg").default}
               title="CLike Compiler" 
               gitlink="https://github.com/ParkerTenBroeck/CLike"
               skills = {["rust", "mips"]}
@@ -261,7 +261,18 @@ const ProjectTiles = ({
               title="3D Renderer" 
               skills = {["java"]}
               description="A simple 3D renderer written in java to teach myself vectors and matrix operations."/>
-
+            
+            <ProjectTile 
+              image={require("./../../assets/images/projects/personal-website.jpg").default}
+              title="Actually Pong" 
+              skills = {["reactjs", "javascript", "html", "css"]}
+              description="My own personal website made to educate myself on making fast interactive websites with a modern look and feel."/>
+            
+            <ProjectTile 
+              image={require("./../../assets/images/projects/actually-pong.jpg").default}
+              title="Actually Pong" 
+              skills = {["java"]}
+              description="A Pong clone that was written to teach me the basics of java / object oriented programing. Also includes a simple AI for the player to battle."/>
             <ProjectTile 
               image={require("./../../assets/images/projects/actually-pong.jpg").default}
               title="Actually Pong" 
