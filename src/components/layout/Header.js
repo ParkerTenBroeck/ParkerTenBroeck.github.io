@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
 import {scrollTo} from '../../layouts/LayoutDefault'
 
 const propTypes = {
@@ -90,7 +89,7 @@ const Header = ({
             bottomDivider && 'has-bottom-divider'
           )}>
           <div className="site-header-inner" >
-              <Link style={{"whiteSpace":"nowrap"}} className="text-xs" to="/" onClick={() => {closeMenu(); scrollTo('#about');}}>Parker TenBroeck</Link>
+              <a style={{"whiteSpace":"nowrap"}} className="text-xs" href="/#0" onClick={() => {closeMenu(); scrollTo('#about');}}>Parker TenBroeck</a>
           </div>
           <div className="header-spacer"/>
           {!hideNav &&
@@ -120,7 +119,7 @@ const Header = ({
                     )}>
                     <li>
                       
-                      <Link data-scroll to="/#about"  style={{'display':'flex', 'justifyContent':'flexStart', 'alignItems':'center'}} onClick={() => {closeMenu(); scrollTo('#about');}}>
+                      <a data-scroll href="/#about"  style={{'display':'flex', 'justifyContent':'flexStart', 'alignItems':'center'}} onClick={() => {closeMenu(); scrollTo('#about');}}>
                         <span>
                           <svg className="mr-8"
                                style={{'minWidth':'16px'}}
@@ -136,10 +135,10 @@ const Header = ({
                             </svg>
                         </span>
                         <span>About</span>
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link data-scroll to="/#skills" style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}} onClick={() => {closeMenu(); scrollTo('#skills');}}>
+                      <a data-scroll href="/#skills" style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}} onClick={() => {closeMenu(); scrollTo('#skills');}}>
                         <span>
                           <svg className="mr-8"
                                style={{'minWidth':'16px'}}
@@ -155,10 +154,10 @@ const Header = ({
                           </svg>
                         </span>
                         <span>Skills</span>
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link data-scroll to="/#projects" style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}} onClick={() => {closeMenu(); scrollTo('#projects');}}>
+                      <a data-scroll href="/#projects" style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}} onClick={() => {closeMenu(); scrollTo('#projects');}}>
                         <span>
                           <svg className="mr-8"
                                 style={{'minWidth':'16px'}}
@@ -178,10 +177,10 @@ const Header = ({
                           </svg>
                         </span>
                         <span>Projects</span>
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}} data-scroll to="/#contact" onClick={() => {closeMenu(); scrollTo('#contact');}}>
+                      <a style={{'display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}} data-scroll href="/#contact" onClick={() => {closeMenu(); scrollTo('#contact');}}>
                         <span>
                           <svg className="mr-8"
                               style={{'minWidth':'16px'}}
@@ -200,13 +199,13 @@ const Header = ({
                           </svg>
                         </span>
                         <span>Contact</span>
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                   {!hideSignin &&
                     <ul className="list-reset header-nav-right">
                       <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
+                        <a href="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</a>
                       </li>
                     </ul>}
                 </div>

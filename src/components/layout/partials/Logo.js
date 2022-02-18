@@ -1,6 +1,5 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
 import Image from '../../elements/Image';
 
 const Logo = ({
@@ -19,13 +18,13 @@ const Logo = ({
       className={classes}
     >
       <h1 className="m-0">
-        <Link to="/">
+        <a href="/#0">
           <Image
             src={require('./../../../assets/images/profile.jpg').default}
             alt="Open"
             width={32}
             height={32} />
-        </Link>
+        </a>
       </h1>
     </div>
   );
