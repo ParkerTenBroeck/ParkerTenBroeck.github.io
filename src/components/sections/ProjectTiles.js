@@ -111,7 +111,7 @@ const ProjectTile = ({title, description , image,gitlink,skills, ...props}) => {
     </div>
     </>
     }
-    {skills == null ? <></> :
+    {skills == null || skills.length == 0 ? <></> :
     <>
     <div className="top-border"></div>
     <div className="mt-16">
@@ -119,11 +119,7 @@ const ProjectTile = ({title, description , image,gitlink,skills, ...props}) => {
         <span>Skills</span>
       </div>
       <div className="mb-16">
-      { 
-        skills.map((name) => ( 
-          <AutoSkillIcon key={name} skill={name}></AutoSkillIcon>
-        ))
-      }
+      
       </div>
     </div>
     </>

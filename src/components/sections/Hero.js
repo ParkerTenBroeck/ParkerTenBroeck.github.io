@@ -155,7 +155,7 @@ const Hero = ({
               </p>
               <p className="text-xs m-0 mb-32 reveal-from-bottom" style={{'textAlign':'left'}} data-reveal-delay="600">
                 My name is Parker TenBroeck. I'm an aspiring Software Developer, student, and cat lover.
-                I thoroughly enjoy writing in Java, C and C++ with well-developed skills in JavaScript, Assembly(MIPS) and HTML. 
+                I thoroughly enjoy writing in Java, Rust, C and C++ with well-developed skills in JavaScript, Assembly(MIPS) and HTML. 
                 My programming experience is predominantly from personal projects, with school work making up the rest.
                 I enjoy taking part and contributing to the open-source community, publishing my work for others to use.
                 I am also a well-developed leader with experience as a student team-lead on a world champion FRC(First Robotics Competition) Robotics team, Simbotics 1114.
