@@ -112,7 +112,7 @@ const ProjectTile = ({title, description , image,gitlink,skills, ...props}) => {
     </div>
     </>
     }
-    {skills === null || skills.length === 0 ? <></> :
+    {skills === null || skills.length === 0 || false ? <></> :
     <>
     <div className="top-border"></div>
     <div className="mt-16">
