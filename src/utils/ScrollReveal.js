@@ -48,7 +48,7 @@ const ScrollReveal = React.forwardRef((props, ref) => {
       if (!checkComplete()) {
         var test = document.getElementById("Main-ScrollBar");
         test.addEventListener('scroll', handleScroll);
-        console.log(window);
+        
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
       }

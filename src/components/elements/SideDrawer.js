@@ -60,9 +60,9 @@ const SideDrawer = ({
     <div className={classes}  onClick={handleClose}>
         <div className="side-drawer-inner" onClick={stopProgagation}>
             { includeTop &&
-            <div class="side-drawer-top">
-                <span class="side-drawer-title  text-color-high text-xs">{title}</span>
-                <span class="side-drawer-close" onClick={handleClose}>
+            <div className="side-drawer-top">
+                <span className="side-drawer-title  text-color-high text-xs">{title}</span>
+                <span className="side-drawer-close" onClick={handleClose}>
                     <svg 
                         viewBox="64 64 896 896" 
                         focusable="false" 
@@ -83,8 +83,8 @@ const SideDrawer = ({
                 </div> 
             </Scrollbars>
             { includeBottom &&
-            <div class="side-drawer-bottom">
-                <Button onClick={handleClose} class="text-xs" size="sm" color="primary">Close</Button>
+            <div className="side-drawer-bottom">
+                <Button onClick={handleClose} className="text-xs" size="sm" color="primary">Close</Button>
             </div>
             }
         </div>
