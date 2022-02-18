@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import { Scrollbars } from 'react-custom-scrollbars';
-import { SpringSystem, MathUtil } from 'rebound';
+import { SpringSystem } from 'rebound';
 
 
 const globalScroll = () =>{
