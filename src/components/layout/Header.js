@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-
+import {scrollTop} from '../../layouts/LayoutDefault'
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -52,7 +52,20 @@ const Header = ({
     setIsactive(true);
   }
 
+  const scrollTo = (e) => {
+    let scroll = 0;
+    try {  
+      scroll = document.querySelector('#skills').getBoundingClientRect().top
+    } catch (error) {
+      
+    }
+    scrollTop(scroll);
+  }
+
   const closeMenu = () => {
+    scrollTo(0);
+
+
     document.body.classList.remove('off-nav-is-active');
     nav.current && (nav.current.style.maxHeight = null);
     setIsactive(false);
@@ -117,7 +130,7 @@ const Header = ({
                     )}>
                     <li>
                       
-                      <Link data-scroll to="/#about" style={{'display':'flex', 'justifyContent':'flexStart', 'alignItems':'center'}} onClick={closeMenu}>
+                      <Link data-scroll to="/#about"  style={{'display':'flex', 'justifyContent':'flexStart', 'alignItems':'center'}} onClick={closeMenu}>
                         <span>
                           <svg className="mr-8"
                                style={{'minWidth':'16px'}}

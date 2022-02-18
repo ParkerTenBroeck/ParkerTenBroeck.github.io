@@ -208,15 +208,16 @@ const ProjectTiles = ({
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
 
-          <ProjectTile 
+           <ProjectTile 
               image={require("./../../assets/images/projects/clike-compiler.jpg").default}
               title="CLike Compiler" 
               gitlink="https://github.com/ParkerTenBroeck/CLike"
               skills = {["rust", "mips"]}
-              description="A simple compiler written in rust for a c-like language. This project w"/>  
+              description="A simple compiler written in rust. This project was used as a learning tool for lexical analysis, parsing and much more"/>  
             <ProjectTile 
               image={require("./../../assets/images/projects/retargetable-assembler.jpg").default}
               title="Retargetable Assembler" 
+              gitlink = "https://github.com/ParkerTenBroeck/Retargetable-Assembler"
               skills = {["java","mips"]}
               description="A Retargetable Assembler written in java that produces ELF files. This assembler contains a powerful builtin pre-processor with macro and expression support."/>  
             <ProjectTile 
@@ -227,6 +228,7 @@ const ProjectTiles = ({
             <ProjectTile 
               image={require("./../../assets/images/projects/mips-assembler.jpg").default}
               title="MIPS" 
+              gitlink="https://github.com/ParkerTenBroeck/MIPS"
               skills = {["java","mips"]}
               description="This project is an implementation of a modified MIPS ISA using the Retargetable Assembler and Retargetable Assembler IDE."/>
 
@@ -238,6 +240,7 @@ const ProjectTiles = ({
             <ProjectTile 
               image={require("./../../assets/images/projects/mycpu.jpg").default}
               title="MyCPU(16bits)" 
+              gitlink="https://github.com/ParkerTenBroeck/MyCPU_16bit"
               skills = {[]}
               description="An attempt to build a CPU ISA and archetecute based on the SAP-1 CPU with no prior knowledge of CPU design."/>
             <ProjectTile 
@@ -254,38 +257,51 @@ const ProjectTiles = ({
             <ProjectTile 
               image={require("./../../assets/images/projects/mini-robot-transmitter-receiver.jpg").default}
               title="Wireless Robot Controller" 
+              gitlink="https://github.com/ParkerTenBroeck/MiniBot-Control-Boards"
               skills = {[]}
               description="A Small PCB designed to be cheap, easy to assemble and have flexible use cases while fitting in a small footprint."/>
             <ProjectTile 
+              image={require("./../../assets/images/projects/legend-of-xor.jpg").default}
+              title="Legend Of Xor" 
+              gitlink="https://github.com/ParkerTenBroeck/Legend-of-Xor"
+              skills = {["java"]}
+              description="A experamental 2D game engine written in java made as a grade 12 final project for a coding course"/>
+            <ProjectTile 
+              image={require("./../../assets/images/projects/mass-storage-client.jpg").default}
+              title="Mass Storage Client" 
+              gitlink="https://github.com/ParkerTenBroeck/Mass-Storage-Client"
+              skills = {["java"]}
+              description="A mod for minecraft made to access all chests in a rechable area on a vanilla server."/>
+            <ProjectTile 
               image={require("./../../assets/images/projects/3d-renderer.jpg").default}
               title="3D Renderer" 
+              gitlink="https://github.com/ParkerTenBroeck/HighSchoolPrograms"
               skills = {["java"]}
               description="A simple 3D renderer written in java to teach myself vectors and matrix operations."/>
             
             <ProjectTile 
               image={require("./../../assets/images/projects/personal-website.jpg").default}
-              title="Actually Pong" 
+              title="Personal Website" 
+              gitlink="https://github.com/ParkerTenBroeck/ParkerTenBroeck.github.io"
               skills = {["reactjs", "javascript", "html", "css"]}
               description="My own personal website made to educate myself on making fast interactive websites with a modern look and feel."/>
             
             <ProjectTile 
               image={require("./../../assets/images/projects/actually-pong.jpg").default}
               title="Actually Pong" 
-              skills = {["java"]}
-              description="A Pong clone that was written to teach me the basics of java / object oriented programing. Also includes a simple AI for the player to battle."/>
-            <ProjectTile 
-              image={require("./../../assets/images/projects/actually-pong.jpg").default}
-              title="Actually Pong" 
+              gitlink="https://github.com/ParkerTenBroeck/HighSchoolPrograms"
               skills = {["java"]}
               description="A Pong clone that was written to teach me the basics of java / object oriented programing. Also includes a simple AI for the player to battle."/>
             <ProjectTile 
               image={require("./../../assets/images/projects/asteroids.jpg").default}
               title="Asteroids" 
+              gitlink="https://github.com/ParkerTenBroeck/HighSchoolPrograms"
               skills = {["java"]}
               description="A Asteroids clone that has some extra personality added."/>
             <ProjectTile 
               image={require("./../../assets/images/projects/minesweeper.jpg").default}
               title="MineSweeper" 
+              gitlink="https://github.com/ParkerTenBroeck/HighSchoolPrograms"
               skills = {["java"]}
               description="A true to the original minesweeper cline intended to learn the practical uses of recursion."/>
 
@@ -297,6 +313,7 @@ const ProjectTiles = ({
             <ProjectTile 
               image={require("./../../assets/images/projects/mirror-mages.jpg").default}
               title="Mirror Mages" 
+              gitlink="https://github.com/ParkerTenBroeck/Mirror-Mages"
               skills = {["cpp","c"]}
               description="An incomplete attempt to write a simple game engine in c++ using entity component systems."/>
           
