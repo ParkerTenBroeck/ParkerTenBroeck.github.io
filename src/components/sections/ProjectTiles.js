@@ -17,7 +17,7 @@ const SkillIcon = ({iconSize, image, text, color, size, offset, ...props}) => {
 
   return (<>
   <span className="mr-8" style={{backgroundColor:color == null ? "red" : color,borderRadius:"9999px", padding:"0 7px", whiteSpace: "nowrap"}}>
-    <span role="image">
+    <span>
       <img    className="mr-4"
               src={ image != null ?  image.default : require('./../../assets/images/skills/skill-tile-icon-java.svg')}
               alt={image.alt}
@@ -39,7 +39,7 @@ const SkillIcon = ({iconSize, image, text, color, size, offset, ...props}) => {
   </>)
 }
 
-const AutoSkillIcon = ({skill,... props}) => {
+const AutoSkillIcon = ({skill, ...props}) => {
   
   switch (skill){
     case "java":
@@ -112,7 +112,7 @@ const ProjectTile = ({title, description , image,gitlink,skills, ...props}) => {
     </div>
     </>
     }
-    {skills === null || skills.length == 0 ? <></> :
+    {skills === null || skills.length === 0 ? <></> :
     <>
     <div className="top-border"></div>
     <div className="mt-16">
