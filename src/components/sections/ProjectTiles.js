@@ -40,6 +40,7 @@ const SkillIcon = ({iconSize, image, text, color, size, offset, ...props}) => {
 }
 
 const AutoSkillIcon = ({skill,... props}) => {
+  
   switch (skill){
     case "java":
       return(<SkillIcon image={require("./../../assets/images/skills/skill-tile-icon-java.svg")} text="Java" color="#A5ABF9"/>)
@@ -111,7 +112,7 @@ const ProjectTile = ({title, description , image,gitlink,skills, ...props}) => {
     </div>
     </>
     }
-    {skills == null || skills.length == 0 ? <></> :
+    {skills === null || skills.length == 0 ? <></> :
     <>
     <div className="top-border"></div>
     <div className="mt-16">
@@ -119,7 +120,11 @@ const ProjectTile = ({title, description , image,gitlink,skills, ...props}) => {
         <span>Skills</span>
       </div>
       <div className="mb-16">
-      
+      { 
+        skills.map((name) => ( 
+          <AutoSkillIcon key={name} skill={name}></AutoSkillIcon>
+        ))
+      }
       </div>
     </div>
     </>
