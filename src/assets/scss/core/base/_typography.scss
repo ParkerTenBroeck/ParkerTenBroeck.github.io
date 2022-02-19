@@ -54,6 +54,16 @@ h5,
 h6,
 .h6,
 small,
+.text-xl {
+	font-size: 28px;
+	line-height: 18px;
+}
+
+.text-lg {
+	font-size: 24px;
+	line-height: 20px;
+}
+
 .text-sm {
 	@include font-size(sm);
 }
