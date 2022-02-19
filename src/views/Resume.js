@@ -86,7 +86,20 @@ const Home = () => {
 
               </div>
               <div className="mt-16 top-border"> 
-                <p className="text-l">Stuff</p>
+                <p className="text-l">
+                <CalendarSVG 
+          className="mr-4 text-color-secondary"
+                alt="calendar"
+                width="16px"
+                height="16px"
+                style = {{display: "inline-block",
+                  fontStyle: "normal",
+                  lineHeight: "0",
+                  textAlign: "center",
+                  textTransform: "none",
+                  verticalAlign:"-0.05em"}}>
+          </CalendarSVG>
+                  Date</p>
               </div>
             </div>
         </div>
