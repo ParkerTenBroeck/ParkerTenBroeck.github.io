@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import {scrollTo} from '../../../layouts/LayoutDefault'
+import { Link } from "react-router-dom";
 
 const FooterNav = ({
   className,
@@ -19,19 +20,19 @@ const FooterNav = ({
     >
       <ul className="list-reset">
         <li>
-          <a  data-scroll href="/#about" onClick={() => {scrollTo('#about');}} >About</a>
+          <Link  data-scroll to="/#about" onClick={() => {scrollTo('#about');}} >About</Link>
         </li>
         <li>
-          <a data-scroll href="/#skills" onClick={() => {scrollTo('#skills');}}>Skills</a>
+          <Link data-scroll to="/#skills" onClick={() => {scrollTo('#skills');}}>Skills</Link>
         </li>
         <li>
-          <a data-scroll href="/#projects" onClick={() => {scrollTo('#projects');}}>Projects</a>
+          <Link data-scroll to="/#projects" onClick={() => {scrollTo('#projects');}}>Projects</Link>
         </li>
         <li>
-          <a data-scroll href="/#contact" onClick={() => {scrollTo('#contact');}}>Contact</a>
+          <Link data-scroll to="/#contact" onClick={() => {scrollTo('#contact');}}>Contact</Link>
         </li>
         <li>
-          <a href="/resume/">Resume</a>
+          <Link to="/resume/">Resume</Link>
         </li>
       </ul>
     </nav>

@@ -18,6 +18,7 @@ export const getScrollY = () =>{
 }
 
 export const scrollTo = (e) => {
+  console.log(window.location.href);
   let scroll = 0;
   try { 
     scroll = document.querySelector(e).getBoundingClientRect().top + getScrollY();

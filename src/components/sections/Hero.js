@@ -4,6 +4,7 @@ import { SectionProps } from '../../utils/SectionProps';
 import Button from '../elements/Button';
 import FooterSocial from '../layout/partials/FooterSocial'
 import LogoRound from '../layout/partials/LogoRound';
+import { Link } from "react-router-dom";
 
 const propTypes = {
   ...SectionProps.types
@@ -163,9 +164,11 @@ const Hero = ({
                 Apart from that, when I'm not coding and the cold season's here, I love to head to the slopes and ski.
               </p>
               <div className="text-xxs reveal-from-bottom mb-16" style={{'textAlign':'left'}} data-reveal-delay="800">
-                <Button size="sm" className="text-xxs" style={{'borderRadius':'20px'}} tag="a" color="primary" href="/resume/">
-                    See Resume
-                </Button>
+                <Link to="/resume/">
+                  <Button size="sm" className="text-xxs" style={{'borderRadius':'20px'}} color="primary" >
+                      See Resume
+                  </Button>
+                </Link>
               </div>
               <div className="reveal-from-bottom"  data-reveal-delay="1000">
                 <FooterSocial iconSize="28px" wide/>
