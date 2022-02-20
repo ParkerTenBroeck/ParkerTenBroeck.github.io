@@ -41,8 +41,8 @@ const App = () => {
       window.removeEventListener("hashchange", tmp);
       window.removeEventListener("load", tmp);
     }
-    window.addEventListener('hashchange', tmp, false);
-    window.addEventListener("load", tmp);
+    window.addEventListener('hashchange', tmp, true);
+    window.addEventListener("load", tmp, true);
   }, []);
 
   return (
@@ -59,6 +59,7 @@ const App = () => {
 
 const handleLoad = () => {
   let test = window.location.href.substring(window.location.href.lastIndexOf('#'), window.location.href.length);
+
   scrollTo(test);
 }
 
