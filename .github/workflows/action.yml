@@ -4,10 +4,10 @@ name: Build & deploy
 on:
   push:
     branches:
-      - main
+      - dist
   pull_request:
     branches:
-      - main
+      - dist
 
 jobs:
   build:
