@@ -14,21 +14,35 @@ function clamp(number, min, max) {
 }
 
 export const getScrollY = () =>{
-  return LayoutDefault.test.getScrollTop();
+  try{
+    return LayoutDefault.test.getScrollTop();
+  }catch(e){
+    return 0;
+  }
 }
 
 export const scrollTo = (e) => {
   let scroll = -1;
   try { 
-    scroll = document.querySelector(e).getBoundingClientRect().top + getScrollY();
+    scroll = document.querySelector(e).getBoundingClientRect().top
+    scroll += getScrollY();
     scrollTop(scroll);
   } catch (error) {
   }
 }
 
+let springSystem;
+let spring;
+let re;
+
 export const scrollTop = (top) => {
-  const springSystem = new SpringSystem();
-  const spring = springSystem.createSpring();
+  if(!(spring == null)){
+    spring.listeners = () => {};
+    window.removeEventListener('scroll', re);
+  }
+  springSystem = new SpringSystem();
+  spring = springSystem.createSpring();
+  
   spring.addListener({ onSpringUpdate: () => {
     const scrollbars =  LayoutDefault.test;
     const val = spring.getCurrentValue();
@@ -36,21 +50,21 @@ export const scrollTop = (top) => {
   } });
 
   const scrollbars = LayoutDefault.test;
-  const scrollTop = scrollbars.getScrollTop();
+  const scrollTop = getScrollY();
   const scrollHeight = scrollbars.getScrollHeight();
   const val = clamp(top, 0, scrollHeight - window.innerHeight);
 
   spring.setCurrentValue(scrollTop).setAtRest();
   spring.setEndValue(val );
 
-  const test = () => {
+  re = () => {
     if(Math.abs(Math.floor(clamp(spring.getCurrentValue(), 0, scrollHeight - window.innerHeight)) - scrollbars.getScrollTop()) < 1){
     }else{
-      window.removeEventListener('scroll', test);
+      window.removeEventListener('scroll', re);
       spring.listeners = () => {};
     }
   }
-  window.addEventListener('scroll', test);
+  window.addEventListener('scroll', re);
 }
 
 export default class LayoutDefault extends Component {
@@ -59,6 +73,10 @@ export default class LayoutDefault extends Component {
     super(children, props, ...rest);
     this.children = children;
 } 
+
+componentDidMount(){
+  LayoutDefault.test = this.refs.scrollbars;
+}
 
 static test;
  
@@ -81,6 +99,7 @@ static test;
         </>
         
         LayoutDefault.test = this.refs.scrollbars;
+
         return tmp;
     }
 }
