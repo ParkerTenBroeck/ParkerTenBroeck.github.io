@@ -83,7 +83,7 @@ const Home = () => {
       <div className="container tiles-item-inner card-tile">
         <div className="card-inner">
           <div className="mb-32">
-            <t1  className="text-lg">
+            <p  className="text-lg">
             <CertificateSVG 
             className="mr-4 text-color-secondary"
                   alt="certificate"
@@ -96,7 +96,7 @@ const Home = () => {
                     textTransform: "none",
                     verticalAlign:"-0.256em"}}>
             </CertificateSVG>
-            Education</t1>
+            Education</p>
           </div>
           <div className="container">
             <div className="mt-16 mr-16 ml-16"> 
@@ -149,7 +149,7 @@ const Home = () => {
       <div className="container tiles-item-inner  card-tile">
         <div className="card-inner">
           <div className="mb-32">
-            <t1  className="text-lg">
+            <p  className="text-lg">
             <SuitcaseSVG 
             className="mr-4 text-color-secondary"
                   alt="suitcase"
@@ -162,7 +162,7 @@ const Home = () => {
                     textTransform: "none",
                     verticalAlign:"-0.256em"}}>
             </SuitcaseSVG>
-            Experience</t1>
+            Experience</p>
           </div>
           <div className="container">
             <div className="mt-16 mr-16 ml-16"> 
@@ -229,7 +229,7 @@ const Home = () => {
       <div className="container tiles-item-inner  card-tile">
         <div className="card-inner">
           <div className="mb-32">
-            <t1  className="text-lg">
+            <p  className="text-lg">
             <UsersSVG 
             className="mr-4 text-color-secondary"
                   alt="users"
@@ -242,7 +242,7 @@ const Home = () => {
                     textTransform: "none",
                     verticalAlign:"-0.256em"}}>
             </UsersSVG>
-            Volunteer Experience And Community Involvement</t1>
+            Volunteer Experience And Community Involvement</p>
           </div>
             <div className="container">
               
@@ -285,7 +285,7 @@ const Home = () => {
       
       <div className="container tiles-item-inner  card-tile">
       <div className="card-inner">
-        <t1  className="text-lg">
+        <p  className="text-lg">
           <AwardSVG 
           className="mr-4 text-color-secondary"
                 alt="users"
@@ -298,7 +298,7 @@ const Home = () => {
                   textTransform: "none",
                   verticalAlign:"-0.256em"}}>
             </AwardSVG>
-            Accomplishments</t1>
+            Accomplishments</p>
           <div className="container">
             <div className="container">
               <div className="mt-16 mr-16 ml-16"> 
