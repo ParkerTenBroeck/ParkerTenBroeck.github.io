@@ -9,6 +9,7 @@ import LayoutDefault from './layouts/LayoutDefault';
 // Views 
 import Home from './views/Home';
 import Resume from './views/Resume';
+import {scrollTo} from './layouts/LayoutDefault'
 
 // Initialize Google Analytics
 //ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -32,6 +33,18 @@ const App = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location]);
 
+  useEffect(() => {
+    handleLoad();
+
+    const tmp = function(){
+      handleLoad();
+      window.removeEventListener("hashchange", tmp);
+      window.removeEventListener("load", tmp);
+    }
+    window.addEventListener('hashchange', tmp, false);
+    window.addEventListener("load", tmp);
+  }, []);
+
   return (
     <ScrollReveal
       ref={childRef}
@@ -42,6 +55,11 @@ const App = () => {
         </Switch>
       )} />
   );
+}
+
+const handleLoad = () => {
+  let test = window.location.href.substring(window.location.href.lastIndexOf('#'), window.location.href.length);
+  scrollTo(test);
 }
 
 export default App;

@@ -16,7 +16,7 @@ const Home = () => {
       <div className="container card-tile tiles-item-inner">
         <div className="card-inner">
           <div className="mb-32">
-            <t1  className="text-lg">
+            <p  className="text-lg">
             <BookSVG 
             className="mr-4 text-color-secondary"
                   alt="book"
@@ -29,7 +29,7 @@ const Home = () => {
                     textTransform: "none",
                     verticalAlign:"-0.256em"}}>
             </BookSVG>
-            Profile Of Skills</t1>
+            Profile Of Skills</p>
           </div>
           <div className="container">
               <div className="">

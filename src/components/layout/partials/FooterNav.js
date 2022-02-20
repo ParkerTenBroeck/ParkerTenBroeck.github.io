@@ -20,16 +20,16 @@ const FooterNav = ({
     >
       <ul className="list-reset">
         <li>
-          <Link  data-scroll to="/#about" onClick={() => {scrollTo('#about');}} >About</Link>
+          <Link  data-scroll to="about" onClick={() => {return scrollTo('#about');}} >About</Link>
         </li>
         <li>
-          <Link data-scroll to="/#skills" onClick={() => {scrollTo('#skills');}}>Skills</Link>
+          <Link data-scroll to="skills" onClick={() => {return  scrollTo('#skills');}}>Skills</Link>
         </li>
         <li>
-          <Link data-scroll to="/#projects" onClick={() => {scrollTo('#projects');}}>Projects</Link>
+          <Link data-scroll to="projects" onClick={() => {return  scrollTo('#projects');}}>Projects</Link>
         </li>
         <li>
-          <Link data-scroll to="/#contact" onClick={() => {scrollTo('#contact');}}>Contact</Link>
+          <Link data-scroll to="contact" onClick={() => {return scrollTo('#contact');}}>Contact</Link>
         </li>
         <li>
           <Link to="/resume/">Resume</Link>
