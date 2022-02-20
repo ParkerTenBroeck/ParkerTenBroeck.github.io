@@ -114,7 +114,7 @@ const Home = () => {
                     textTransform: "none",
                     verticalAlign:"-0.05em"}}>
                   </CalendarSVG>
-                <span className="text-xs text-color-secondary">Fall 2020 - </span><span className="background-color-secondary text-xs text-color-black medium-rounded-border pl-4 pr-4">Present</span>
+                <span className="text-xs text-color-secondary">Fall 2020 - Winter 2021</span>
               </p>
               <p className="text-xxs">The University of Windsor, Windsor, Ontario</p>
             </div>
