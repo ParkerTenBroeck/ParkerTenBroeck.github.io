@@ -48,8 +48,8 @@ const ScrollReveal = React.forwardRef((props, ref) => {
   useEffect(() => {
     if (typeof revealEl !== 'undefined' && revealEl.length > 0) {
       if (!checkComplete()) {
-        var test = document.getElementById("Main-ScrollBar");
-        test.addEventListener('scroll', handleScroll);
+        //var test = document.getElementById("Main-ScrollBar");
+        //test.addEventListener('scroll', handleScroll);
         
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
@@ -72,6 +72,7 @@ const ScrollReveal = React.forwardRef((props, ref) => {
 
   const handleResize = throttle(() => {
     setViewportheight(window.innerHeight);
+    revealElements();
   }, 30);
 
   useEffect(() => {

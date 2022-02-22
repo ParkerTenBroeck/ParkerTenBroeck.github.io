@@ -81,11 +81,9 @@ componentDidMount(){
 static test;
  
     render() {
-
       let tmp= 
         <>
-          <Header navPosition="left" className="reveal-from-bottom" />
-    
+          <Header navPosition="left"/>
             <main className="site-content">
               <Scrollbars ref="scrollbars"  id="Main-ScrollBar" style={{position:"absolute", overflowX:"hidden"}}
               renderThumbVertical={({ style, ...props }) =>
