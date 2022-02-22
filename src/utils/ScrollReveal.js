@@ -24,14 +24,16 @@ const ScrollReveal = React.forwardRef((props, ref) => {
       let revealOffset = (el.getAttribute('data-reveal-offset') ? el.getAttribute('data-reveal-offset') : '50');
       let listenedEl = (el.getAttribute('data-reveal-container') ? el.closest(el.getAttribute('data-reveal-container')) : el);
       if (elementIsVisible(listenedEl, revealOffset)) {
-        if (revealDelay && revealDelay !== 0) {
+        if (revealDelay && revealDelay !== 0 && !el.classList.contains('has-revealed')) {
           setTimeout(function () {
             el.classList.add('is-revealed');
+            el.classList.add('has-revealed');
           }, revealDelay);
         } else {
           el.classList.add('is-revealed');
+          el.classList.add('has-revealed');
         }
-      }else if(el.classList.contains('is-revealed') && !elementIsVisible(listenedEl, revealOffset)){
+      }else {
         el.classList.remove('is-revealed');
       }
     }
