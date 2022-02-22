@@ -20,8 +20,8 @@ const SkillCard = ({iconSize, image, text, revealDelay, ...props}) => (
           <Image
             src={ image != null ?  image.default : require('./../../assets/images/skills/skill-tile-icon-java.svg')}
             alt={image.alt}
-            width={iconSize}
-            height={iconSize} />
+            style={{width:"auto", height:"64px"}}
+            />
         </div>
       </div>
       <div className="skill-tiles-item-content">
