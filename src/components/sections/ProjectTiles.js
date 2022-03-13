@@ -73,7 +73,7 @@ const AutoSkillIcon = ({skill, ...props}) => {
     }
 };
 
-const ProjectTile = ({title, description , image,gitlink,skills, ...props}) => {
+const ProjectTile = ({title, description , image,website,gitlink,skills, ...props}) => {
   const [showD, setVisible2] = useState(false);
   const showDrawer = () => {
     setVisible2(showD ? false : true);
@@ -143,6 +143,19 @@ const ProjectTile = ({title, description , image,gitlink,skills, ...props}) => {
     </div>
     </>
     }
+    {website == null ? <></> :
+    <>
+    <div className="top-border"></div>
+      <div className="mt-16">
+        <div className="mb-8">
+          <span>Website</span>
+        </div>
+        <div className="mb-16">
+          <a style={{color:"#177ddc",textDecoration:"underline"}} className="text-xxs mb-16" href={website}>{website}</a>
+        </div>
+      </div>
+      </>
+    }
     {gitlink == null ? <></> :
     <>
     <div className="top-border"></div>
@@ -211,6 +224,7 @@ const ProjectTiles = ({
            <ProjectTile 
               image={require("./../../assets/images/projects/clike-compiler.jpg").default}
               title="CLike Compiler" 
+              website="https://parkertenbroeck.com/CLike/"
               gitlink="https://github.com/ParkerTenBroeck/CLike"
               skills = {["rust", "mips"]}
               description="A simple compiler written in rust. This project was used as a learning tool for lexical analysis, parsing and much more"/>  

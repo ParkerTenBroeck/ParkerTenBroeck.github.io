@@ -115,14 +115,14 @@ const Hero = ({
       <div className="container tiles-item-inner">
         <div className={innerClasses}>
           <div className="hero-content">
-            <div className="reveal-from-bottom logo-round-above-container" data-reveal-delay="100">
+            <div className="reveal-from-bottom logo-round-above-container" data-reveal-offset="0" data-reveal-delay="100">
               <LogoRound/>
             </div>
-            <h4 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
+            <h4 className="mt-0 mb-16 reveal-from-bottom" data-reveal-offset="0" data-reveal-delay="200">
               Parker TenBroeck
             </h4>
             <div className="container">
-              <p className="text-xs reveal-from-bottom" data-reveal-delay="400" style={{'marginBottom':'16px','display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
+              <p className="text-xs reveal-from-bottom" data-reveal-offset="0" data-reveal-delay="400" style={{'marginBottom':'16px','display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
                 <svg style={{'display': 'block','marginRight':'8px','marginLeft':'0px','height': '100%'}} 
                      stroke="currentColor" 
                      fill="none" 
@@ -140,7 +140,7 @@ const Hero = ({
                 <span className="typeWritter"></span>
                 <span className="blink">|</span>
               </p>
-              <p className="text-xs reveal-from-bottom" data-reveal-delay="400" style={{'marginBottom':'16px','display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
+              <p className="text-xs reveal-from-bottom" data-reveal-offset="0" data-reveal-delay="400" style={{'marginBottom':'16px','display':'flex', 'justifyContent':'flex-start', 'alignItems':'center'}}>
                 <svg style={{'display': 'block','marginRight':'8px','marginLeft':'0px','height': '100%'}} 
                      stroke="currentColor" 
                      fill="currentColor" 
@@ -154,7 +154,7 @@ const Hero = ({
                 </svg>
                 <span>Ontario, Canada</span>
               </p>
-              <p className="text-xs m-0 mb-32 reveal-from-bottom" style={{'textAlign':'left'}} data-reveal-delay="600">
+              <p className="text-xs m-0 mb-32 reveal-from-bottom" style={{'textAlign':'left'}} data-reveal-offset="0" data-reveal-delay="600">
                 My name is Parker TenBroeck. I'm an aspiring Software Developer, student, and cat lover.
                 I thoroughly enjoy writing in Java, Rust, C and C++ with well-developed skills in JavaScript, Assembly(MIPS) and HTML. 
                 My programming experience is predominantly from personal projects, with school work making up the rest.
@@ -163,14 +163,14 @@ const Hero = ({
                 I have always wanted to work with computers to learn and contribute to technology. 
                 Apart from that, when I'm not coding and the cold season's here, I love to head to the slopes and ski.
               </p>
-              <div className="text-xxs reveal-from-bottom mb-16" style={{'textAlign':'left'}} data-reveal-delay="800">
+              <div className="text-xxs reveal-from-bottom mb-16" style={{'textAlign':'left'}} data-reveal-offset="0" data-reveal-delay="800">
                 <Link to="/resume/">
                   <Button size="sm" className="text-xxs" style={{'borderRadius':'20px'}} color="primary" >
                       See Resume
                   </Button>
                 </Link>
               </div>
-              <div className="reveal-from-bottom"  data-reveal-delay="1000">
+              <div className="reveal-from-bottom" data-reveal-offset="0"  data-reveal-delay="1000">
                 <FooterSocial iconSize="28px" wide/>
               </div>
             </div>

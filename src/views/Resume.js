@@ -37,7 +37,7 @@ const Home = () => {
               <div className="mt-16 mr-16 ml-16"> 
                 <p className="text-sm mb-16">Programing</p>
                 <ul className="text-xxs">
-                  <li>Highly fluent in Java with intermediate skills in C/C++ and MIPS Assembly.</li>
+                  <li>Highly fluent in Java with intermediate skills in Rust, C/C++ and MIPS Assembly.</li>
                   <li>Basic Web Development using HTML, CSS, JavaScript for frontend and PHP, SQL for backend.</li>  
                 </ul>
               </div>
