@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://parkertenbroeck.com/static/css/main.f022891a.chunk.css",
-    "main.js": "https://parkertenbroeck.com/static/js/main.bf0f8a77.chunk.js",
-    "main.js.map": "https://parkertenbroeck.com/static/js/main.bf0f8a77.chunk.js.map",
+    "main.js": "https://parkertenbroeck.com/static/js/main.f3238eda.chunk.js",
+    "main.js.map": "https://parkertenbroeck.com/static/js/main.f3238eda.chunk.js.map",
     "runtime-main.js": "https://parkertenbroeck.com/static/js/runtime-main.8b258048.js",
     "runtime-main.js.map": "https://parkertenbroeck.com/static/js/runtime-main.8b258048.js.map",
     "static/js/2.eb75c0f0.chunk.js": "https://parkertenbroeck.com/static/js/2.eb75c0f0.chunk.js",
@@ -18,7 +18,6 @@
     "static/media/book.34833646.svg": "https://parkertenbroeck.com/static/media/book.34833646.svg",
     "static/media/calendar.9f9a134e.svg": "https://parkertenbroeck.com/static/media/calendar.9f9a134e.svg",
     "static/media/certificate.4cd516bc.svg": "https://parkertenbroeck.com/static/media/certificate.4cd516bc.svg",
-    "static/media/clike-compiler.jpg": "https://parkertenbroeck.com/static/media/clike-compiler.b56ceb7e.jpg",
     "static/media/style.scss": "https://parkertenbroeck.com/static/media/illustration-section-02.f11c21a9.svg",
     "static/media/features-split-image-01.png": "https://parkertenbroeck.com/static/media/features-split-image-01.94b14c16.png",
     "static/media/legend-of-xor.jpg": "https://parkertenbroeck.com/static/media/legend-of-xor.bb2db5b4.jpg",
@@ -27,6 +26,7 @@
     "static/media/mini-robot-transmitter-receiver.jpg": "https://parkertenbroeck.com/static/media/mini-robot-transmitter-receiver.8c28eac8.jpg",
     "static/media/mips-assembler.jpg": "https://parkertenbroeck.com/static/media/mips-assembler.13957809.jpg",
     "static/media/mips-cpu.jpg": "https://parkertenbroeck.com/static/media/mips-cpu.cfb8a4cb.jpg",
+    "static/media/mips-edu.jpg": "https://parkertenbroeck.com/static/media/mips-edu.171d6dea.jpg",
     "static/media/mirror-mages.jpg": "https://parkertenbroeck.com/static/media/mirror-mages.87f62765.jpg",
     "static/media/msip.jpg": "https://parkertenbroeck.com/static/media/msip.7675a829.jpg",
     "static/media/mycpu.jpg": "https://parkertenbroeck.com/static/media/mycpu.97fd63a4.jpg",
@@ -55,6 +55,6 @@
     "static/js/runtime-main.8b258048.js",
     "static/js/2.eb75c0f0.chunk.js",
     "static/css/main.f022891a.chunk.css",
-    "static/js/main.bf0f8a77.chunk.js"
+    "static/js/main.f3238eda.chunk.js"
   ]
 }
