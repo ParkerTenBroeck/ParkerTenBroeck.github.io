@@ -222,7 +222,7 @@ const ProjectTiles = ({
           <div className={tilesClasses}>
 
            <ProjectTile 
-              image={require("./../../assets/images/projects/clike-compiler.jpg").default}
+              image={require("./../../assets/images/projects/mips-edu.jpg").default}
               title="MIPS Edu" 
               website="https://parkertenbroeck.com/MIPS-edu/"
               gitlink="https://github.com/ParkerTenBroeck/MIPS-edu"
