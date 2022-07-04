@@ -223,11 +223,11 @@ const ProjectTiles = ({
 
            <ProjectTile 
               image={require("./../../assets/images/projects/clike-compiler.jpg").default}
-              title="CLike Compiler" 
-              website="https://parkertenbroeck.com/CLike/"
-              gitlink="https://github.com/ParkerTenBroeck/CLike"
-              skills = {["rust", "mips"]}
-              description="A simple compiler written in rust. This project was used as a learning tool for lexical analysis, parsing and much more"/>  
+              title="MIPS Edu" 
+              website="https://parkertenbroeck.com/MIPS-edu/"
+              gitlink="https://github.com/ParkerTenBroeck/MIPS-edu"
+              skills = {["rust", "mips", "assembly"]}
+              description="A IDE, Assembler, Debugger, and emulator for an educationa version of the MIPS32 ISA. This project was started as a way to learn and familiarize myself with the rust programing language "/>  
             <ProjectTile 
               image={require("./../../assets/images/projects/retargetable-assembler.jpg").default}
               title="Retargetable Assembler" 
