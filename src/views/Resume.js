@@ -37,7 +37,7 @@ const Home = () => {
               <div className="mt-16 mr-16 ml-16"> 
                 <p className="text-sm mb-16">Programing</p>
                 <ul className="text-xxs">
-                  <li>Highly fluent in Java with intermediate skills in Rust, C/C++ and MIPS Assembly.</li>
+                  <li>Fluent in Java and Rust with intermediate skills in C/C++ and MIPS Assembly.</li>
                   <li>Basic Web Development using HTML, CSS, JavaScript for frontend and PHP, SQL for backend.</li>  
                 </ul>
               </div>
@@ -50,6 +50,7 @@ const Home = () => {
                 <ul className="text-xxs">
                   <li>Comfortable using the Microsoft Office Suite tools such as Excel, Word, PowerPoint, and Outlook.</li>
                   <li>Familiar with communication and planning software such as Trello and Slack.</li>  
+                  <li>Confident working on Linux-based operating systems or Microsoft Windows depending on workflow requirements.</li>  
                 </ul>
               </div>
           </div>
@@ -100,6 +101,27 @@ const Home = () => {
           </div>
           <div className="container">
             <div className="mt-16 mr-16 ml-16"> 
+              <p className="text-sm mb-16">Bachelor of Computer Science</p>
+              <p className="mb-16">
+                <CalendarSVG 
+                  className="mr-4 text-color-secondary"
+                  alt="calendar"
+                  width="16px"
+                  height="16px"
+                  style = {{display: "inline-block",
+                    fontStyle: "normal",
+                    lineHeight: "0",
+                    textAlign: "center",
+                    textTransform: "none",
+                    verticalAlign:"-0.05em"}}>
+                  </CalendarSVG>
+                <span className="text-xs text-color-secondary">2022 - </span><span className="background-color-secondary text-xs text-color-black medium-rounded-border pl-4 pr-4">Present</span>
+              </p>
+              <p className="text-xxs">Brock University, St. Catharines, Ontario</p>
+            </div>
+          </div>
+          <div className="container top-border">
+            <div className="mt-16 mr-16 ml-16"> 
               <p className="text-sm mb-16">Bachelor of Electrical and Computer Engineering</p>
               <p className="mb-16">
                 <CalendarSVG 
@@ -114,7 +136,7 @@ const Home = () => {
                     textTransform: "none",
                     verticalAlign:"-0.05em"}}>
                   </CalendarSVG>
-                <span className="text-xs text-color-secondary">Fall 2020 - Winter 2021</span>
+                <span className="text-xs text-color-secondary">2020 - 2022</span>
               </p>
               <p className="text-xxs">The University of Windsor, Windsor, Ontario</p>
             </div>
@@ -166,10 +188,24 @@ const Home = () => {
           </div>
           <div className="container">
             <div className="mt-16 mr-16 ml-16"> 
-              <p className="text-sm mb-16">Software Developer</p>
+              <p className="text-sm mb-16">Bicycle Mechanic</p>
               <p className="mb-16">
                 <CalendarSVG className="mr-4 text-color-secondary" alt="calendar" width="16px" height="16px" style = {{display: "inline-block", fontStyle: "normal", lineHeight: "0", textAlign: "center", textTransform: "none", verticalAlign:"-0.05em"}}></CalendarSVG>
                 <span className="text-xs text-color-secondary">Sept 2019 - </span><span className="background-color-secondary text-xs text-color-black medium-rounded-border pl-4 pr-4">Present</span>
+              </p>
+              <p className="text-xxs">Trek Bicycle Store Mississauga, Ontario</p>
+              <ul className="text-xxs">
+                <li>Have the knowledge to assemble all bicycles according to manufacturer and store specifications.</li>  
+                <li>Ensure all bikes are up to safety specifications and ready for customers to use.</li>  
+              </ul>
+            </div>
+          </div>
+          <div className="container top-border">
+            <div className="mt-16 mr-16 ml-16"> 
+              <p className="text-sm mb-16">Software Developer</p>
+              <p className="mb-16">
+                <CalendarSVG className="mr-4 text-color-secondary" alt="calendar" width="16px" height="16px" style = {{display: "inline-block", fontStyle: "normal", lineHeight: "0", textAlign: "center", textTransform: "none", verticalAlign:"-0.05em"}}></CalendarSVG>
+                <span className="text-xs text-color-secondary">May 2022 - </span><span className="background-color-secondary text-xs text-color-black medium-rounded-border pl-4 pr-4">Present</span>
               </p>
               <p className="text-xxs">Governor Simcoe Secondary School, St. Catharines, Ontario</p>
               <ul className="text-xxs">
