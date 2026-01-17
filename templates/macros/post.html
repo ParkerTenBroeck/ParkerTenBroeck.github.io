@@ -1,0 +1,28 @@
+{%- macro excerpt(page) -%}
+<article class="excerpt">
+    <h1><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h1>
+    <p><time>{{page.date | date(format="%b %d, %Y")}}</time> 
+        {% if page.taxonomies %}{% if page.taxonomies.tags %}
+
+            {% for tag in page.taxonomies.tags %}     
+                {% set url = get_taxonomy_url(kind="tags", name=tag, lang=page.lang) %}
+                • <a href = "{{url}}">#{{tag}}</a> 
+            {% endfor %}
+        {% endif %}{% endif %}
+    </p>
+    <div class="description">
+        {{page.description | markdown | safe}}
+    </div>
+</article>
+{%- endmacro -%}
+
+
+{% macro page_link(path) %}
+  {% set p = get_page(path=path) %}
+  <a href="{{ p.permalink }}">{{ p.title }}</a>
+  {% if p.date %}
+    <time datetime="{{ p.date }}">
+      {{ p.date | date(format="%b %d, %Y") }}
+    </time>
+  {% endif %}
+{% endmacro %}

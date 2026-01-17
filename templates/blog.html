@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% import "macros/post.html" as posts %}
+
+{% block main %}
+
+
+<div class="blog">
+    {% for page in section.pages %}
+        {{ posts::excerpt(page=page) }}
+    {% endfor %}
+</div>
+
+
+{% endblock main %}

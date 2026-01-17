@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% import "macros/post.html" as posts %}
+
+{% block main %}
+<p>
+  Hi, I'm Parker. I like to talk about silly computer things and whatever else comes to mind.
+</p>
+<p>
+ You can find <a href="{{ get_url(path='@/blog/_index.md') }}">Posts</a>,
+<a href="{{ get_url(path='@/projects/_index.md') }}">Projects</a>,
+<a href="{{ get_url(path='@/crafts/_index.md') }}">Crafts</a>,
+<a href="{{ get_url(path='@/pictures/_index.md') }}">Pictures</a>, and
+<a href="{{ get_url(path='tags') }}">Tags</a> up above on any page.
+</p>
+
+<p>Please note that this page is currently under construction; not all content is finished.</p> 
+
+<p>If you'd like to employ me please take a look at my <a href="{{get_url(path='resume.pdf')}}">resume</a>.</p>
+
+<br>
+
+
+
+<p>Heres a list of stuff I'd like you to checkout:</p>
+<ul>
+    <li>{{ posts::page_link(path="projects/automata.md") }}</li>
+    <li>{{ posts::page_link(path="projects/software-renderer.md") }}</li>
+    <li>{{ posts::page_link(path="projects/ansi.md") }}</li>
+    <li>{{ posts::page_link(path="projects/generators.md") }}</li>
+    <li>{{ posts::page_link(path="projects/fastexpr.md") }}</li>
+    <li>{{ posts::page_link(path="projects/kernel.md") }}</li>
+    <li>{{ posts::page_link(path="blog/first.md") }}</li>
+</ul>
+
+{% endblock main %}

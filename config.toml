@@ -1,0 +1,38 @@
+# The URL the site will be built for
+base_url = "https://parkertenbroeck.com/"
+
+# The site title and description; used in feeds by default.
+title = "Parker TenBroeck"
+description = "Personal website"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# The default language; used in feeds.
+default_language = "en"
+
+# When set to "true", a feed is automatically generated.
+generate_feeds = true
+
+# The default author for pages
+author = "Parker TenBroeck"
+
+# The filename to use for the feed. Used as the template filename, too.
+# Defaults to "atom.xml", which has a built-in template that renders an Atom 1.0 feed.
+# There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
+feed_filenames = ["rss.xml", "atom.xml"]
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+taxonomies = [
+    {name = "tags", feed=true}
+]
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+render_emoji = true
+bottom_footnotes = true
+github_alerts = true

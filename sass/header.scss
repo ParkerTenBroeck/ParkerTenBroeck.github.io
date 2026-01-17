@@ -1,0 +1,28 @@
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1em 0;
+    font-size: large;
+
+    .title * {
+        font-size: xx-large;
+
+
+        text-decoration-color: var(--primary)!important;
+        &:hover {
+            text-decoration-color: var(--grey)!important;
+        }
+    }
+
+    nav {
+        a {
+            margin-right: 0.5rem;
+        }
+    }
+
+    padding-bottom: 1em;
+}
+
