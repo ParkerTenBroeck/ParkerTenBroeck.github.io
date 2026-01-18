@@ -24,6 +24,7 @@
     {% endif %}
 
     <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
+    <link rel="stylesheet" href="{{ get_url(path='giallo.css') }}">
     
     {%- if page.extra.stylesheets or section.extra.stylesheets %}
         {%- for stylesheet in page.extra.stylesheets | default(value=section.extra.stylesheets) %}

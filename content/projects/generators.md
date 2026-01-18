@@ -6,4 +6,20 @@ date = 2025-05-07
 [taxonomies]
 tags = ["java", "bytecode"]
 +++
+
+
+```java
+public static Future<Void, IOException> echo(@Cancellation("close") Socket socket) throws IOException {
+    try(socket){
+        var buffer = ByteBuffer.allocate(4096*2);
+        while(true){
+            bytes_received = socket.read(buffer).await() + bytes_received;
+            buffer.flip();
+            bytes_sent = socket.write_all(buffer).await() + bytes_sent;
+            buffer.clear().limit(buffer.capacity());
+        }
+    }
+}
+```
+
 https://github.com/ParkerTenBroeck/generators

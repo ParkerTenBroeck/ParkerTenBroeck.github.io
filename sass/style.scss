@@ -4,6 +4,10 @@
 @use "blog.scss";
 @use "fonts.scss";
 
+.z-code{
+    overflow-x: auto;
+}
+
 body {
   background: var(--bg-0);
   color: var(--fg-1);
@@ -33,7 +37,7 @@ a {
 
   text-decoration: underline;
   text-decoration-thickness: 0.30ex;
-  text-decoration-color: var(--grey);
+  text-decoration-color: var(--grey-light);
 
   &:hover {
     text-decoration-color: var(--primary);
@@ -77,7 +81,7 @@ h6 {
 }
 
 code {
-  background: var(--bg-1);
+  background: var(--grey-dark);
   border-radius: 3px;
   font-family: 'Berkeley Mono';
   padding: .15rem .3rem;
