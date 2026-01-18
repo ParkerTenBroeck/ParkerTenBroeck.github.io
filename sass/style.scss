@@ -2,6 +2,7 @@
 @use "header.scss";
 @use "footer.scss";
 @use "blog.scss";
+@use "fonts.scss";
 
 body {
   background: var(--bg-0);
@@ -48,6 +49,7 @@ h6 {
   color: var(--fg-0);
   font-weight: bold;
   margin-top: 2em;
+  line-height: 1.4em;
 }
 
 h1 {
