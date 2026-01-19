@@ -6,4 +6,11 @@ date = 2025-12-12
 [taxonomies]
 tags = ["C++", "graphics"]
 +++
-https://github.com/ParkerTenBroeck/3P93
+
+
+[GitHub](https://github.com/ParkerTenBroeck/3P93)
+
+
+{{ video(src="/videos/rasterizer/halo.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}
+{{ video(src="/videos/rasterizer/bricks.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}
+{{ video(src="/videos/rasterizer/wavy.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}

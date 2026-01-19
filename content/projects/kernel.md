@@ -7,3 +7,6 @@ date = 2024-08-08
 tags = ["rust", "embedded", "risc-v"]
 +++
 https://github.com/ParkerTenBroeck/milkv-duos-rs
+
+
+{{ video(src="/videos/kernel/os_demo.mp4", controls=true, caption="meow")}}

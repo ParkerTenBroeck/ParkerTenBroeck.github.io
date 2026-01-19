@@ -3,7 +3,7 @@
 @use "footer.scss";
 @use "blog.scss";
 @use "fonts.scss";
-@use "img.scss";
+@use "lightbox.scss";
 
 .z-code{
     overflow-x: auto;
@@ -100,22 +100,26 @@ figure {
   flex-direction: column;
 }
 
-figure.image {
+figure {
   margin: 2rem 0;
   text-align: center;
 }
 
-@media screen and (min-width: 978px) {
-  
-}
-
-figure.image img {
-  max-width: 80%;
+figure * {
+  max-width: 100%;
   height: auto;
   border-radius: 6px;
 }
 
-figure.image figcaption {
+@media screen and (min-width: 700px) {
+  figure * {
+    max-width: 80%;
+    height: auto;
+    border-radius: 6px;
+  }
+}
+
+figure figcaption {
   max-width: 80%;
   margin-top: 0.5rem;
   font-size: 0.9rem;

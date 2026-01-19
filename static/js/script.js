@@ -61,6 +61,8 @@
     function applyTransform() {
         clampPan();
         img.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
+        img.classList.toggle("is-zoomed", scale > 1);
+        img.classList.toggle("is-unzoomed", scale === 1);
     }
 
     function resetView() {
