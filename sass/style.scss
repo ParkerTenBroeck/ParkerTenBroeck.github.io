@@ -3,6 +3,7 @@
 @use "footer.scss";
 @use "blog.scss";
 @use "fonts.scss";
+@use "img.scss";
 
 .z-code{
     overflow-x: auto;
@@ -91,3 +92,30 @@ time {
   padding-bottom: 1em;
   color: var(--fg-2);
 }
+
+
+figure {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+figure.image {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+figure.image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 6px;
+}
+
+figure.image figcaption {
+  max-width: 80%;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--fg-muted);
+}
+
+

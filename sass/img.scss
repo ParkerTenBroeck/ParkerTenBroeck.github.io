@@ -1,0 +1,56 @@
+/* Prevent page scroll when lightbox is open */
+body.lb-open {
+  overflow: hidden;
+  touch-action: none; /* disables background gestures */
+}
+
+figure.image img.zoomable {
+  cursor: pointer;
+}
+
+// figure.image img.zoomable:hover {
+//   transform: scale(1.02);
+// }
+
+
+/* Overlay */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+  z-index: 1000;
+}
+
+.lightbox.open {
+  opacity: 1;
+  pointer-events: auto; /* blocks clicks/scroll to the page behind */
+}
+
+/* Stage fills viewport; it’s the only interaction surface */
+.lightbox__stage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;         /* hide panned edges */
+  cursor: zoom-out;         /* click outside to close */
+}
+
+.lightbox__img {
+  max-width: 95vw;
+  max-height: 95vh;
+  user-select: none;
+  -webkit-user-drag: none;
+  cursor: grab;
+  transform-origin: 50% 50%;
+  will-change: transform;
+  touch-action: none;
+}
+
+.lightbox__img.dragging {
+  cursor: grabbing;
+}

@@ -117,6 +117,7 @@
     {%- endif -%}
 </head>
 
+
 <body data-theme="dark">
     <div class="content">
         <header class="header">
@@ -137,6 +138,12 @@
             {%- endfilter -%}{%- endfilter %}
         </footer>
     </div>
-</body>
 
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <div class="lightbox__stage">
+        <img id="lightbox-img" class="lightbox__img" alt="">
+    </div>
+    </div>
+</body>
+<script src="{{ get_url(path='/js/script.js') }}"></script>
 </html>

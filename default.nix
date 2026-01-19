@@ -14,5 +14,5 @@ let
       };
 in
 pkgs.mkShell {
-  buildInputs = [ unstable.zola ];
+  buildInputs = [ unstable.zola pkgs.exiftool ];
 }
