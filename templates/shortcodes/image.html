@@ -1,6 +1,2 @@
-<figure class="{% if class %} {{ class }} {% endif %}">
-  <img src="{{ get_url(path=src) }}" loading="lazy" decoding="async" class="zoomable">
-  {% if caption != "" %}
-    <figcaption>{{ caption }}</figcaption>
-  {% endif %}
-</figure>
+{% import "macros/figures.html" as figures %}
+{{ figures::image(src=src, caption=caption) }}

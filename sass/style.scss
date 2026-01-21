@@ -4,6 +4,7 @@
 @use "blog.scss";
 @use "fonts.scss";
 @use "lightbox.scss";
+@use "gallery.scss";
 
 .z-code{
     overflow-x: auto;
@@ -42,6 +43,11 @@ a {
 
   &:hover {
     text-decoration-color: var(--primary);
+  }
+
+  &:has(img),
+  &:has(video) {
+    text-decoration: none;
   }
 }
 
@@ -105,14 +111,14 @@ figure {
   text-align: center;
 }
 
-figure * {
+figure > * {
   max-width: 100%;
   height: auto;
   border-radius: 6px;
 }
 
 @media screen and (min-width: 700px) {
-  figure * {
+  figure > * {
     max-width: 80%;
     height: auto;
     border-radius: 6px;

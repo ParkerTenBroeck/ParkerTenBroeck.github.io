@@ -11,6 +11,6 @@ tags = ["C++", "graphics"]
 [GitHub](https://github.com/ParkerTenBroeck/3P93)
 
 
-{{ video(src="/videos/rasterizer/halo.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}
-{{ video(src="/videos/rasterizer/bricks.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}
-{{ video(src="/videos/rasterizer/wavy.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}
+{{ video(src="projects/rasterizer/halo.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}
+{{ video(src="projects/rasterizer/bricks.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}
+{{ video(src="projects/rasterizer/wavy.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}

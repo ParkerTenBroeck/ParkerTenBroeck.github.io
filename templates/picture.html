@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% import "macros/post.html" as post %}
+{% import "macros/figures.html" as figures %}
+
+{% block main %}
+{{ post::page_title(page=page) }}
+{{ figures::image(src=page.extra.picture_src, caption=page.description) }}
+{% endblock main %}

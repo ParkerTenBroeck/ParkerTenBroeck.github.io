@@ -1,1 +1,1 @@
-exiftool -all= -tagsfromfile @ -Orientation -overwrite_original -r ./static/images ./static/videos
+exiftool -q -all= -tagsfromfile @ -Orientation -overwrite_original -r ./static/ ./content/

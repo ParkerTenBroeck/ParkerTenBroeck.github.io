@@ -1,6 +1,7 @@
 {% extends "base.html" %}
-{% import "macros/taxonomy.html" as macros %}
-{% import "macros/post.html" as posts %}
+
+{% import "macros/post.html" as post %}
+{% import "macros/taxonomy.html" as taxonomy %}
 {% import "macros/feed.html" as feed_macros %}
 
 {%- block title -%}
@@ -27,10 +28,10 @@
 
 {%- block main -%}
 
-<h1>{{ macros::prettify(term=term.name) }}</h1>
+<h1>{{ taxonomy::prettify(term=term.name) }}</h1>
 <div>
 {%- for page in paginator.pages | default(value=term.pages) %}
-    {{ posts::excerpt(page=page) }}
+    {{ post::excerpt(page=page) }}
 {%- endfor %}
 </div>
 

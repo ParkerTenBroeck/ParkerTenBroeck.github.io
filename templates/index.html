@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% import "macros/post.html" as posts %}
+{% import "macros/post.html" as post %}
 
 {% block main %}
 <p>
@@ -20,17 +20,15 @@
 
 <br>
 
-
-
 <p>Heres a list of stuff I'd like you to checkout:</p>
 <ul>
-    <li>{{ posts::page_link(path="projects/automata.md") }}</li>
-    <li>{{ posts::page_link(path="projects/software-renderer.md") }}</li>
-    <li>{{ posts::page_link(path="projects/ansi.md") }}</li>
-    <li>{{ posts::page_link(path="projects/generators.md") }}</li>
-    <li>{{ posts::page_link(path="projects/fastexpr.md") }}</li>
-    <li>{{ posts::page_link(path="projects/kernel.md") }}</li>
-    <li>{{ posts::page_link(path="blog/first.md") }}</li>
+    <li>{{ post::page_link(path="projects/automata.md") }}</li>
+    <li>{{ post::page_link(path="projects/rasterizer/index.md") }}</li>
+    <li>{{ post::page_link(path="projects/ansi.md") }}</li>
+    <li>{{ post::page_link(path="projects/generators.md") }}</li>
+    <li>{{ post::page_link(path="projects/fastexpr.md") }}</li>
+    <li>{{ post::page_link(path="projects/kernel/index.md") }}</li>
+    <li>{{ post::page_link(path="blog/first.md") }}</li>
 </ul>
 
 {% endblock main %}

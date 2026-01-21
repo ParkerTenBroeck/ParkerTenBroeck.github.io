@@ -1,29 +1,36 @@
-{%- macro excerpt(page) -%}
+{% macro tags(page) %}
+  {% if page.taxonomies %}{% if page.taxonomies.tags %}
+      {% for tag in page.taxonomies.tags %}     
+          {% set url = get_taxonomy_url(kind="tags", name=tag, lang=page.lang) %}
+          • <a href = "{{url}}">#{{tag}}</a> 
+      {% endfor %}
+  {% endif %}{% endif %}
+{% endmacro %}
+
+
+{% macro excerpt(page) %}
 <article class="excerpt">
     <h1><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h1>
-    <p><time>{{page.date | date(format="%b %d, %Y")}}</time> 
-        {% if page.taxonomies %}{% if page.taxonomies.tags %}
-
-            {% for tag in page.taxonomies.tags %}     
-                {% set url = get_taxonomy_url(kind="tags", name=tag, lang=page.lang) %}
-                • <a href = "{{url}}">#{{tag}}</a> 
-            {% endfor %}
-        {% endif %}{% endif %}
-    </p>
+    <p><time datetime="{{ page.date }}">{{page.date | date(format="%b %d, %Y")}}</time>{{self::tags(page=page)}}</p>
     <div class="description">
         {{page.description | markdown | safe}}
     </div>
   <a href="{{ page.permalink }}">Read more -></a>
 </article>
-{%- endmacro -%}
+{% endmacro %}
 
 
 {% macro page_link(path) %}
   {% set p = get_page(path=path) %}
   <a href="{{ p.permalink }}">{{ p.title }}</a>
   {% if p.date %}
-    <time datetime="{{ p.date }}">
-      {{ p.date | date(format="%b %d, %Y") }}
-    </time>
+    <time datetime="{{ p.date }}">{{ p.date | date(format="%b %d, %Y") }}</time>
   {% endif %}
+{% endmacro %}
+
+{% macro page_title(page) %}
+  <div class="title">
+      <h1>{{ page.title }}</h1>
+      <p><time>{{page.date}}</time>{{self::tags(page=page)}}</p>
+    </div>
 {% endmacro %}

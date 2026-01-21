@@ -1,6 +1,6 @@
 +++
 title = "Pictures"
 sort_by = "date"
-template = "blog.html"
-page_template = "blog-page.html"
+template = "gallery.html"
+page_template = "picture.html"
 +++

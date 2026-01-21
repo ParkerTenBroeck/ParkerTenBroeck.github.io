@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
-{% import "macros/post.html" as posts %}
+{% import "macros/post.html" as post %}
 
 {% block main %}
 
 
 <div class="blog">
     {% for page in section.pages %}
-        {{ posts::excerpt(page=page) }}
+        {{ post::excerpt(page=page) }}
     {% endfor %}
 </div>
 

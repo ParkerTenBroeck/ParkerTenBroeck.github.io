@@ -1,0 +1,31 @@
+{% macro image(src, caption, class="") %}
+<figure class="{% if class %} {{ class }} {% endif %}">
+  <img src="{{ get_url(path=src) }}" loading="lazy" alt="{{caption | default(value='')}}" decoding="async" class="zoomable">
+  {% if caption != "" %}
+    <figcaption>{{ caption  | markdown() | safe }}</figcaption>
+  {% endif %}
+</figure>
+{% endmacro %}
+
+
+
+{% macro video(src, caption, loop=false, controls=true, autoplay=false, poster="", class="") %}
+<figure class="{% if class %} {{ class }} {% endif %}">
+  <video
+      {% if poster %} poster="{{ poster }}"{% endif %}
+      {% if loop | default(value=false) %} loop {% endif %}
+      {% if controls  | default(value=true) %} controls {% endif %}
+      preload="metadata"
+      muted
+      {% if autoplay | default(value=false) %} autoplay {% endif %}
+      playsinline
+      alt="{{caption | default(value='')}}"
+    >
+      <source src="{{ get_url(path=src) }}">
+    </video>
+    {% if caption != "" %}
+      <figcaption>{{ caption  | markdown() | safe }}</figcaption>
+  {% endif %}
+</figure>
+
+{% endmacro %}

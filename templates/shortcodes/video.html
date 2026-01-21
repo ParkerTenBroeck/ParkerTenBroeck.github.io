@@ -1,17 +1,9 @@
-<figure class="{% if class %} {{ class }} {% endif %}">
-  <video
-      {% if poster %} poster="{{ poster }}"{% endif %}
-      {% if loop | default(value=false) %} loop {% endif %}
-      {% if controls  | default(value=true) %} controls {% endif %}
-      preload="metadata"
-      muted
-      {% if autoplay | default(value=false) %} autoplay {% endif %}
-      playsinline
-    >
-      <source src="{{ get_url(path=src) }}">
-    </video>
-    {% if caption != "" %}
-      <figcaption>{{ caption }}</figcaption>
-  {% endif %}
-</figure>
-
+{% import "macros/figures.html" as figures %}
+{{ figures::video(
+  src=src, 
+  caption=caption, 
+  loop=loop | default(value=false), 
+  controls=controls | default(value=true), 
+  autoplay=autoplay | default(value=false), 
+  poster=poster | default(value=""))
+}}
