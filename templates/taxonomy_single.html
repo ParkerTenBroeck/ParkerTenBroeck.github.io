@@ -28,7 +28,7 @@
 
 {%- block main -%}
 
-<h1>{{ taxonomy::prettify(term=term.name) }}</h1>
+{# <h1>{{ taxonomy::prettify(term=term.name) }}</h1> #}
 <div>
 {%- for page in paginator.pages | default(value=term.pages) %}
     {{ post::excerpt(page=page) }}

@@ -12,6 +12,6 @@ category = ["project"]
 [GitHub](https://github.com/ParkerTenBroeck/3P93)
 
 
-{{ video(src="projects/rasterizer/halo.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}
-{{ video(src="projects/rasterizer/bricks.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}
-{{ video(src="projects/rasterizer/wavy.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}
+{{ video(src="halo.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}
+{{ video(src="bricks.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}
+{{ video(src="wavy.mp4", controls=true, autoplay=true, loop=true, caption="meow")}}

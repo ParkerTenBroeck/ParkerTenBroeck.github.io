@@ -10,4 +10,4 @@ category = ["project"]
 https://github.com/ParkerTenBroeck/milkv-duos-rs
 
 
-{{ video(src="/projects/kernel/os_demo.mp4", controls=true, caption="meow")}}
+{{ video(src="os_demo.mp4", controls=true, caption="meow")}}
