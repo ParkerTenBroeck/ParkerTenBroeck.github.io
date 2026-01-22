@@ -5,5 +5,6 @@ date = 2025-04-03
 
 [taxonomies]
 tags = ["java", "bytecode"]
+category = ["project"]
 +++
 https://github.com/ParkerTenBroeck/fastexpr

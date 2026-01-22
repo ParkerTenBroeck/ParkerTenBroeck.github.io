@@ -5,6 +5,7 @@ date = 2025-12-12
 
 [taxonomies]
 tags = ["C++", "graphics"]
+category = ["project"]
 +++
 
 

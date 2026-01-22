@@ -5,8 +5,10 @@ date = 2026-01-14
 
 [taxonomies]
 tags = ["web", "deno", "rust"]
+category = ["project"]
 +++
 
-https://github.com/ParkerTenBroeck/automata
+You can visit the website [parkertenbroeck.com/automata/](https://parkertenbroeck.com/automata/) or look at the [GitHub](https://github.com/ParkerTenBroeck/automata)
 
-parkertenbroeck.com/automata/ 
+
+ 

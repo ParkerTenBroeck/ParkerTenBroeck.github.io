@@ -5,5 +5,6 @@ date = 2024-04-21
 
 [taxonomies]
 tags = ["rust", "sql", "web"]
+category = ["project"]
 +++
 https://github.com/ParkerTenBroeck/qc-backend

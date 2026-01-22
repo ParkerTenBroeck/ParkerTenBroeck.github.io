@@ -4,7 +4,8 @@ description = "Water spraying out of a kitchen faucet captured at a high shutter
 date = 2017-04-06
 
 [taxonomies]
-tags = ["photo", "high speed", "water"]
+tags = ["high speed", "water"]
+category = ["photo"]
 
 [extra]
 picture_src = "/pictures/hs_water_3.jpg"

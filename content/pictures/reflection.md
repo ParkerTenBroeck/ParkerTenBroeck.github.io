@@ -4,7 +4,8 @@ description = "The reflection of a local playground through a puddle under the s
 date = 2023-07-29
 
 [taxonomies]
-tags = ["photo", "nature", "water"]
+tags = ["nature", "water"]
+category = ["photo"]
 
 [extra]
 picture_src = "/pictures/reflection.jpg"

@@ -5,5 +5,6 @@ date = 2024-05-09
 
 [taxonomies]
 tags = ["rust", "x86"]
+category = ["project"]
 +++
 https://github.com/ParkerTenBroeck/brainfuck_compiler

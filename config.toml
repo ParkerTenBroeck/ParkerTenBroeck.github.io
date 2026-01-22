@@ -26,7 +26,8 @@ feed_filenames = ["rss.xml", "atom.xml"]
 build_search_index = true
 
 taxonomies = [
-    {name = "tags", feed=true}
+    {name = "tags", feed=true},
+    {name = "category", feed=true}
 ]
 
 minify_html = true

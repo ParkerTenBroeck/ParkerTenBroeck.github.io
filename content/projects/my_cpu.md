@@ -5,6 +5,7 @@ date = 2018-01-16
 
 [taxonomies]
 tags = ["hardware", "logic gates", "highschool"]
+category = ["project"]
 +++
 
 https://github.com/ParkerTenBroeck/MyCPU_16bit

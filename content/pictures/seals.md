@@ -4,7 +4,8 @@ description = "A red and white buoy with over 10 seals and/or sealions all lying
 date = 2024-01-02
 
 [taxonomies]
-tags = ["photo", "water", "nature"]
+tags = ["water", "nature"]
+category = ["photo"]
 
 [extra]
 picture_src = "/pictures/seals.jpg"

@@ -5,6 +5,7 @@ date = 2024-08-08
 
 [taxonomies]
 tags = ["rust", "embedded", "risc-v"]
+category = ["project"]
 +++
 https://github.com/ParkerTenBroeck/milkv-duos-rs
 

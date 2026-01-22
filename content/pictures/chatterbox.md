@@ -4,7 +4,8 @@ description = "A close-up of my childhood cat Chatterbox Pumpkin TenBroeck, an o
 date = 2015-10-08
 
 [taxonomies]
-tags = ["photo", "cat"]
+tags = ["cat"]
+category = ["photo"]
 
 [extra]
 picture_src = "/pictures/chatterbox.jpg"

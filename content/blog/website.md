@@ -1,5 +1,5 @@
 +++
-title = "My first post"
+title = "Personal Site"
 description = "Moving from an abandond react website which hasn't been updated in over 4 years to Zola"
 date = 2026-01-16
 updated = 2026-01-20

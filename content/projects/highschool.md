@@ -5,6 +5,7 @@ date = 2020-01-01
 
 [taxonomies]
 tags = ["java", "fun", "highschool"]
+category = ["project"]
 +++
 
 https://github.com/ParkerTenBroeck/HighSchoolPrograms

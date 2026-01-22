@@ -5,6 +5,7 @@ date = 2020-01-16
 
 [taxonomies]
 tags = ["java", "fun", "game", "highschool"]
+category = ["project"]
 +++
 
 https://github.com/ParkerTenBroeck/Legend-of-Xor

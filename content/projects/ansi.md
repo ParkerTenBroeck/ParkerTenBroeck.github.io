@@ -5,6 +5,7 @@ date = 2025-09-23
 
 [taxonomies]
 tags = ["embedded", "rust"]
+category = ["project"]
 +++
 
 https://github.com/ParkerTenBroeck/ansi

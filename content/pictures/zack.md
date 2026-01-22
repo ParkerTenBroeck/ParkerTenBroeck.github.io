@@ -4,7 +4,8 @@ description = "A close-up of my most beloved childhood cat Zack, an orange tabby
 date = 2015-10-08
 
 [taxonomies]
-tags = ["photo", "cat"]
+tags = ["cat"]
+category = ["photo"]
 
 [extra]
 picture_src = "/pictures/zack.jpg"

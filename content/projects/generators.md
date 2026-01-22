@@ -5,8 +5,11 @@ date = 2025-05-07
 
 [taxonomies]
 tags = ["java", "bytecode"]
+category = ["project"]
 +++
 
+[!WARN]
+meow
 
 ```java
 public static Future<Void, IOException> echo(@Cancellation("close") Socket socket) throws IOException {

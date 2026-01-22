@@ -4,7 +4,8 @@ description = "Water spraying from the side of a broken bathroom faucet. Small d
 date = 2017-04-05
 
 [taxonomies]
-tags = ["photo", "high speed", "water"]
+tags = ["high speed", "water"]
+category = ["photo"]
 
 [extra]
 picture_src = "/pictures/hs_water_2.jpg"

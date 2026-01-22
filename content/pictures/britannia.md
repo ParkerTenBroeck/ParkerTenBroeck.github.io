@@ -7,7 +7,8 @@ Bright green moss growing on rock faces and eroding concrete.
 date = 2024-06-14
 
 [taxonomies]
-tags = ["photo", "industrial", "nature"]
+tags = ["industrial", "nature"]
+category = ["photo"]
 
 [extra]
 picture_src = "/pictures/britannia.jpg"
