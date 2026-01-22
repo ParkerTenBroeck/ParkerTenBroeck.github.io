@@ -8,4 +8,4 @@ tags = ["java", "fun", "game", "highschool"]
 category = ["project"]
 +++
 
-https://github.com/ParkerTenBroeck/Legend-of-Xor
+Take a look at the [GitHub](https://github.com/ParkerTenBroeck/Legend-of-Xor)

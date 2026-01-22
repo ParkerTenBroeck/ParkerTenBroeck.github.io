@@ -7,4 +7,5 @@ date = 2025-04-03
 tags = ["java", "bytecode"]
 category = ["project"]
 +++
-https://github.com/ParkerTenBroeck/fastexpr
+
+Take a look at the [GitHub](https://github.com/ParkerTenBroeck/fastexpr)

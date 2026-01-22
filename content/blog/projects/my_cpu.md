@@ -8,4 +8,4 @@ tags = ["hardware", "logic gates", "highschool"]
 category = ["project"]
 +++
 
-https://github.com/ParkerTenBroeck/MyCPU_16bit
+Take a look at the [GitHub](https://github.com/ParkerTenBroeck/MyCPU_16bit)

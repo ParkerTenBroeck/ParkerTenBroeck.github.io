@@ -8,8 +8,8 @@ tags = ["java", "bytecode"]
 category = ["project"]
 +++
 
-[!WARN]
-meow
+
+Take a look at the [GitHub](https://github.com/ParkerTenBroeck/generators)
 
 ```java
 public static Future<Void, IOException> echo(@Cancellation("close") Socket socket) throws IOException {
@@ -24,5 +24,3 @@ public static Future<Void, IOException> echo(@Cancellation("close") Socket socke
     }
 }
 ```
-
-https://github.com/ParkerTenBroeck/generators

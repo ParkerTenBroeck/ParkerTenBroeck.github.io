@@ -7,4 +7,5 @@ date = 2024-04-21
 tags = ["rust", "sql", "web"]
 category = ["project"]
 +++
-https://github.com/ParkerTenBroeck/qc-backend
+
+Take a look at the [GitHub](https://github.com/ParkerTenBroeck/qc-backend)

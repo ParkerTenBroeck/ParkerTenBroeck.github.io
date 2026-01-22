@@ -7,4 +7,5 @@ date = 2024-05-09
 tags = ["rust", "x86"]
 category = ["project"]
 +++
-https://github.com/ParkerTenBroeck/brainfuck_compiler
+
+Take a look at the [GitHub](https://github.com/ParkerTenBroeck/brainfuck_compiler)

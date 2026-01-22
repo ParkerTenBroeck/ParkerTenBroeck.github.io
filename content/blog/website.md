@@ -19,3 +19,6 @@ I finally had the motivation (and time) to update the site.
 I borrowed *heavily* from the style and theming used in [without.boats](https://without.boats/)
 
 I also took insparation from [mcyoung.xyc](https://mcyoung.xyz) 
+
+
+Take a look at the [GitHub](https://github.com/ParkerTenBroeck/ParkerTenBroeck.github.io)

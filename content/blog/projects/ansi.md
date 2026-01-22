@@ -8,4 +8,4 @@ tags = ["embedded", "rust"]
 category = ["project"]
 +++
 
-https://github.com/ParkerTenBroeck/ansi
+Take a look at the [GitHub](https://github.com/ParkerTenBroeck/ansi)

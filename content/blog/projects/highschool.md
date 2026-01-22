@@ -8,4 +8,4 @@ tags = ["java", "fun", "highschool"]
 category = ["project"]
 +++
 
-https://github.com/ParkerTenBroeck/HighSchoolPrograms
+Take a look at the [GitHub](https://github.com/ParkerTenBroeck/HighSchoolPrograms)
