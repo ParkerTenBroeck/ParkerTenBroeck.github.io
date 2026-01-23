@@ -1,6 +1,9 @@
 {% macro image(src, caption, class="") %}
+{% set mdata = get_image_metadata(path=src) %}
+{# {% set image = resize_image(path=src, height=mdata.height, width=mdata.width, format="webp") %} #}
+
 <figure class="{% if class %} {{ class }} {% endif %}">
-  <img src="{{ get_url(path=src) }}" loading="lazy" alt="{{caption | default(value='')}}" decoding="async" class="zoomable">
+  <img src="{{ src }}" loading="lazy" alt="{{caption | default(value='')}}" decoding="async" class="zoomable">
   {% if caption != "" %}
     <figcaption>{{ caption  | markdown() | safe }}</figcaption>
   {% endif %}
@@ -10,6 +13,7 @@
 
 
 {% macro video(src, caption, loop=false, controls=true, autoplay=false, poster="", class="") %}
+
 <figure class="{% if class %} {{ class }} {% endif %}">
   <video
       {% if poster %} poster="{{ poster }}"{% endif %}
