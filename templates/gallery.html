@@ -6,9 +6,9 @@
 <br><br>
 <div class="gallery">
 {% for page in section.pages -%}
-    {% set image = resize_image(path=page.extra.picture_src, width=260*2, height=180*2, op="fit_width", format="avif") %}
+    {% set image = resize_image(path=page.extra.picture_src, width=260*2, height=180*2, op="fit_width", format="avif", quality=60, speed=4) %}
     <a href="{{ page.permalink }}">
-      <img src="{{ image.url }}" height="{{image.height}}" width="{{image.width}}" alt="{{page.description}}" fetchpriority=high />
+      <img src="{{ image.url }}" height="{{image.height}}" width="{{image.width}}" alt="{{page.description}}" decoding="async" fetchpriority=high />
     </a>
 {%- endfor %}
 </div>
