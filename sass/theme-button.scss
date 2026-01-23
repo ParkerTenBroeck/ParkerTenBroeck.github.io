@@ -57,3 +57,10 @@
     opacity: 1;
     transform: rotate(0deg) scale(1);
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .theme-toggle,
+    .theme-toggle .icon {
+        transition: none !important;
+    }
+}
