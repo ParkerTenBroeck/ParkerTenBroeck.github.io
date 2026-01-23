@@ -1,6 +1,6 @@
 {% import "macros/figures.html" as figures %}
 {{ figures::video(
-  src=src, 
+  src=page.colocated_path ~ src, 
   caption=caption, 
   loop=loop | default(value=false), 
   controls=controls | default(value=true), 
