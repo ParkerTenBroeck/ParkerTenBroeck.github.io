@@ -8,10 +8,9 @@ tags = ["java", "bytecode"]
 category = ["project"]
 +++
 
-
 Take a look at the [GitHub](https://github.com/ParkerTenBroeck/generators)
 
-```java
+```java,linenos
 public static Future<Void, IOException> echo(@Cancellation("close") Socket socket) throws IOException {
     try(socket){
         var buffer = ByteBuffer.allocate(4096*2);

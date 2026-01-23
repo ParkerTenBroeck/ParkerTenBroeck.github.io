@@ -24,7 +24,6 @@
     {% endif %}
 
     <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
-    <link rel="stylesheet" href="{{ get_url(path='giallo.css') }}">
     
     {%- if page.extra.stylesheets or section.extra.stylesheets %}
         {%- for stylesheet in page.extra.stylesheets | default(value=section.extra.stylesheets) %}
@@ -81,8 +80,6 @@
         {%- endif %}
     {%- endblock %}
 
-    <meta name="color-scheme" content="dark">
-
 
     {%- if page.description -%}
         <meta property="og:description" content="{{ page.description | markdown(inline=true) | striptags }}">
@@ -118,7 +115,7 @@
 </head>
 
 
-<body data-theme="dark">
+<body>
     <div class="content">
         <header class="header">
             {% filter indent -%}{%- filter indent -%}
@@ -139,10 +136,10 @@
         </footer>
     </div>
 
-    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Media viewer">
-        <div class="lightbox__stage" id="lightbox-stage">
-            <img id="lightbox-img" class="lightbox__img" alt="">
-        </div>
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <div class="lightbox__stage">
+        <img id="lightbox-img" class="lightbox__img" alt="">
+    </div>
     </div>
 </body>
 <script src="{{ get_url(path='/js/script.js') }}"></script>

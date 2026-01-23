@@ -39,6 +39,7 @@ github_alerts = true
 
 
 [markdown.highlighting]
-theme = "github-dark"
-style = "class"
+light_theme = "github-light-high-contrast"     
+dark_theme = "github-dark-high-contrast"     
+style = "inline"
 error_on_missing_language = true
