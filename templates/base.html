@@ -23,7 +23,8 @@
         {%- block feeds -%}{%- endblock -%}
     {% endif %}
 
-    <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
+    {% set css = load_data(path="style.css") %}
+    <style>{{ css | safe }}</style>
     
     {%- if page.extra.stylesheets or section.extra.stylesheets %}
         {%- for stylesheet in page.extra.stylesheets | default(value=section.extra.stylesheets) %}
@@ -142,5 +143,7 @@
     </div>
     </div>
 </body>
-<script src="{{ get_url(path='/js/script.js') }}"></script>
+
+    {% set script = load_data(path="js/script.js") %}
+    <script>{{script | safe}}</script>
 </html>
