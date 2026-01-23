@@ -1,34 +1,33 @@
+@use "theme-button.scss";
+
 @media (prefers-color-scheme: dark) {
     * {
-        color-scheme: dark!important;
+        color-scheme: dark !important;
     }
 }
+
 :root[data-theme="dark"] {
     * {
-        color-scheme: dark!important;
+        color-scheme: dark !important;
     }
 }
 
 @media (prefers-color-scheme: light) {
     * {
-        color-scheme: light!important;
+        color-scheme: light !important;
     }
 }
+
 :root[data-theme="light"] {
     * {
-        color-scheme: light!important;
+        color-scheme: light !important;
     }
 }
 
-* {
-    transition: color linear 0.25s;
-    transition: background-color linear 0.25s;
-}
-
-.giallo{
-    background-color: var(--bg-1)!important;
-    overflow: auto; 
-    border-radius: 5px; 
+.giallo {
+    background-color: var(--bg-1) !important;
+    overflow: auto;
+    border-radius: 5px;
 }
 
 .giallo-l {
@@ -36,6 +35,7 @@
     min-height: 1lh;
     width: 100%;
 }
+
 .giallo-ln {
     display: inline-block;
     user-select: none;
@@ -47,19 +47,23 @@
 }
 
 :root {
+    --theme-transition-time: 0.25s;
+
     --bg-0: light-dark(#fff, #1d1d1d);
     --bg-1: light-dark(#eee, #131313);
 
     --grey-light: light-dark(#a4a4a4, #777);
     --grey-dark: light-dark(#969696, #24292E);
-    
+
     --fg-0: light-dark(#111, #eee);
     --fg-1: light-dark(#333, #ccc);
     --fg-2: light-dark(#555, #999);
 
     --primary: light-dark(#ffd979, #daa520);
-    --text-highlight:  color-mix(in srgb-linear, var(--primary) 50%, transparent);
+    --text-highlight: color-mix(in srgb-linear, var(--primary) 50%, transparent);
 }
 
-
-
+* {
+    transition: color linear var(--theme-transition-time);
+    transition: background-color linear var(--theme-transition-time);
+}

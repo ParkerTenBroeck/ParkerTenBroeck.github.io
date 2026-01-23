@@ -1,0 +1,59 @@
+
+.no-theme-transition,
+.no-theme-transition * {
+  transition: none !important;
+}
+
+.theme-toggle {
+    width: 2em;
+    height: 2em;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 7px;
+
+    border: 1px solid var(--grey-light);
+    background: var(--bg-1);
+    color: var(--fg-0);
+    cursor: pointer;
+    padding: 0px;
+    transition: transform 120ms ease, background-color var(--theme-transition-time) ease, 
+        border-color var(--theme-transition-time) ease;
+}
+
+.theme-toggle:hover {
+    color: var(--fg-1);
+}
+
+.theme-toggle:active {
+    transform: scale(0.96);
+}
+
+.theme-toggle .icon {
+    width: calc(1.6em - 2px);
+    height: calc(1.6em - 2px);
+    grid-area: 1 / 1;
+    transition: transform var(--theme-transition-time) ease, opacity var(--theme-transition-time) ease;
+    transform-origin: 50% 50%;
+}
+
+.theme-toggle .icon-sun {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.theme-toggle .icon-moon {
+    opacity: 0;
+    transform: rotate(-25deg) scale(0.85);
+    transform: translateY(1em);
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-sun {
+    opacity: 0;
+    transform: rotate(25deg) scale(0.85);
+    transform: translateY(1em)
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-moon {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
