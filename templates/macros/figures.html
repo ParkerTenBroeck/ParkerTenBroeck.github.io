@@ -3,7 +3,7 @@
 {# {% set image = resize_image(path=src, height=mdata.height, width=mdata.width, format="webp") %} #}
 
 <figure class="{% if class %} {{ class }} {% endif %}">
-  <img src="{{ src }}" loading="lazy"  height="{{mdata.height}}" width="{{mdata.width}}" alt="{{caption | default(value='')}}" decoding="async" class="zoomable">
+  <img src="{{ get_url(path=src) }}" loading="lazy"  height="{{mdata.height}}" width="{{mdata.width}}" alt="{{caption | default(value='')}}" decoding="async" class="zoomable">
   {% if caption != "" %}
     <figcaption>{{ caption  | markdown() | safe }}</figcaption>
   {% endif %}
