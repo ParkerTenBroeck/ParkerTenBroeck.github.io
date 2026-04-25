@@ -1,6 +1,8 @@
 {% set is_remote = src is starting_with("http://") or src is starting_with("https://") %}
 {% set is_site_root = src is starting_with("/") %}
 {% set badge_src = src %}
+{% set badge_link = link | default(value="") %}
+{% set has_link = badge_link != "" %}
 
 {% if is_site_root %}
   {% set badge_src = get_url(path=src) %}
@@ -10,12 +12,14 @@
   {% set badge_src = get_url(path=local_asset_path) %}
 {% endif %}
 
+{% if has_link %}
 <a
-  href="{{ link }}"
+  href="{{ badge_link }}"
   class="badge-88x31"
   aria-label="{{ alt | default(value='88x31 badge link') }}"
   {% if new_tab | default(value=false) %}target="_blank" rel="noopener noreferrer"{% endif %}
 >
+{% endif %}
   <img
     class="badge-88x31"
     src="{{ badge_src }}"
@@ -25,4 +29,6 @@
     loading="lazy"
     decoding="async"
   >
+{% if has_link %}
 </a>
+{% endif %}
