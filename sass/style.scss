@@ -60,6 +60,13 @@ img,video {
   background-color: var(--grey-dark);
 }
 
+.badge-88x31 {
+  width: 176px;
+  height: 62px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
 h1,
 h2,
 h3,
@@ -139,5 +146,3 @@ figure figcaption {
   font-size: 0.9rem;
   color: var(--fg-muted);
 }
-
-

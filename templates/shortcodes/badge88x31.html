@@ -1,0 +1,28 @@
+{% set is_remote = src is starting_with("http://") or src is starting_with("https://") %}
+{% set is_site_root = src is starting_with("/") %}
+{% set badge_src = src %}
+
+{% if is_site_root %}
+  {% set badge_src = get_url(path=src) %}
+{% elif not is_remote %}
+  {% set local_asset_dir = page.relative_path | regex_replace(pattern="[^/]+$", rep="") %}
+  {% set local_asset_path = local_asset_dir ~ src %}
+  {% set badge_src = get_url(path=local_asset_path) %}
+{% endif %}
+
+<a
+  href="{{ link }}"
+  class="badge-88x31"
+  aria-label="{{ alt | default(value='88x31 badge link') }}"
+  {% if new_tab | default(value=false) %}target="_blank" rel="noopener noreferrer"{% endif %}
+>
+  <img
+    class="badge-88x31"
+    src="{{ badge_src }}"
+    alt="{{ alt | default(value='88x31 badge') }}"
+    width="88"
+    height="31"
+    loading="lazy"
+    decoding="async"
+  >
+</a>
