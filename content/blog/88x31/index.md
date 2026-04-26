@@ -1,7 +1,7 @@
 +++
 title = "88x31"
 description = "My 88x31 badge as well as a few others"
-date = 2026-04-25
+date = 2026-04-26
 
 [taxonomies]
 tags = ["web", "88x31"]
@@ -23,4 +23,11 @@ other
 
 {{ badge88x31(src="madeon-linux.gif", alt="made on Linux badge") }}
 {{ badge88x31(link="https://nixos.org/", src="nixos.png", alt="NixOS badge", new_tab=true) }}
+{{ badge88x31(src="bestviewed.gif", alt="Best Viewed badge") }}
+{{ badge88x31(src="roroqa.gif", alt="Rendered On RISC OS badge") }}
+{{ badge88x31(src="right_to_repair_01.jpg", alt="Right To Repair badge") }}
+{{ badge88x31(src="treksites.gif", alt="Trek Site badge") }}
+{{ badge88x31(src="greyasashe.gif", alt="Grey as ash badge") }}
+{{ badge88x31(src="button-devils.gif", alt="Devils badge") }}
+{{ badge88x31(src="b5can_s.gif", alt="Can badge") }}
 
