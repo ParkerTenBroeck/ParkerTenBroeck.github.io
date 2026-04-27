@@ -5,6 +5,7 @@ date = 2026-04-26
 
 [taxonomies]
 tags = ["web", "88x31"]
+category = ["random"]
 +++
 
 I decided to make a 88x31 badge for fun and included a fun little puzzle inside it. 
@@ -36,3 +37,4 @@ other
 {{ badge88x31(src="b5can_s.gif", alt="Can badge") }}
 {{ badge88x31(src="bootleg64_spinbutton.gif", alt="bootleg64 badge") }}
 {{ badge88x31(src="bunbrowser.gif", alt="Bunny badge") }}
+{{ badge88x31(src="kill-fascists.png", alt="Kill Fascists badge") }}

@@ -1,11 +1,12 @@
 +++
 title = "Personal Site"
-description = "Moving from an abandond react website which hasn't been updated in over 4 years to Zola"
+description = "Moving from an abandoned React website which hasn't been updated in over 4 years to Zola."
 date = 2026-01-17
 updated = 2026-04-20
 
 [taxonomies]
 tags = ["web", "zola"]
+category = ["project"]
 +++
 
 I finally had the motivation (and time) to update my personal site. It's one of those tasks which aren't very interesting which makes starting it 100 times harder than it needs to be. 
