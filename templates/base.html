@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name=viewport content="width=device-width,initial-scale=1">
     
     <title>
     {%- block title -%}
@@ -23,8 +23,9 @@
         {%- block feeds -%}{%- endblock -%}
     {% endif %}
 
-    {% set css = load_data(path="style.css") %}
-    <style>{{ css | safe }}</style>
+    {# {% set css = load_data(path="style.css") %}
+    <style>{{ css | safe }}</style> #}
+    <link rel="stylesheet" type="text/css" href="{{ get_url(path='style.css') }}">
     
     {%- if page.extra.stylesheets or section.extra.stylesheets %}
         {%- for stylesheet in page.extra.stylesheets | default(value=section.extra.stylesheets) %}
@@ -144,6 +145,5 @@
     </div>
 </body>
 
-    {% set script = load_data(path="js/script.js") %}
-    <script>{{script | safe}}</script>
+    <script src="{{ get_url(path='js/script.js') }}"></script>
 </html>

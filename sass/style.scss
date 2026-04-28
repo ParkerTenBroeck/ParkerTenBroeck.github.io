@@ -28,7 +28,7 @@ body {
   margin-bottom: 4em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
+  max-width: min(800px, 100%);
   padding: 0 0.5em;
 }
 
@@ -148,3 +148,27 @@ figure figcaption {
   font-size: 0.9rem;
   color: var(--fg-muted);
 }
+
+table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--grey-light);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  color: var(--fg-0);
+  background: var(--grey-dark);
+}
+
+

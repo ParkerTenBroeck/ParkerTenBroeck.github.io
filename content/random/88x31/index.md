@@ -16,7 +16,7 @@ I decided to make a 88x31 badge for fun and included a fun little puzzle inside 
 
 Here are some badges from people I know/like
 
-{{ badge88x31(link="https://ivytime.gay", src="https://ivytime.gay/badges/ivytime.gay.png", alt="Ivy's badge", new_tab=true) }}
+{{ badge88x31(link="https://ivytime.gay", src="ivytime.gay.png", alt="Ivy's badge", new_tab=true) }}
 
 ---
 
@@ -27,6 +27,9 @@ other
 {{ badge88x31(link="https://rust-lang.org/", src="rustnow.gif", alt="Rust badge", new_tab=true) }}
 {{ badge88x31(link="https://www.w3.org/QA/Tips/iso-date", src="iso-date.gif", alt="ISO 8601 badge", new_tab=true) }}
 {{ badge88x31(link="https://www.aperturescience.com/", src="aperturelabs.gif", alt="Aperture Labs badge", new_tab=true) }}
+{{ badge88x31(link="https://archive.org/", src="preserve.png", alt="Preserve badge", new_tab=true) }}
+{{ badge88x31(link="https://ublockorigin.com/", src="ublock.png", alt="UBlock badge", new_tab=true) }}
+{{ badge88x31(link="https://wikipedia.org/", src="wikipedia.gif", alt="Wikipedia badge", new_tab=true) }}
 {{ badge88x31(src="niko-chuckle.gif", alt="Niko Chuckle Viewed badge") }}
 {{ badge88x31(src="bestviewed.gif", alt="Best Viewed badge") }}
 {{ badge88x31(src="roroqa.gif", alt="Rendered On RISC OS badge") }}
