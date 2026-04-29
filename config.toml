@@ -37,6 +37,7 @@ render_emoji = true
 bottom_footnotes = true
 github_alerts = true
 
+# insert_anchor_links = "heading"
 
 [markdown.highlighting]
 light_theme = "github-light-high-contrast"     

@@ -60,37 +60,37 @@ Take a look at the [GitHub](https://github.com/ParkerTenBroeck/MyCPU_16bit)
 | No Operation                              | 00     | 30000   | 1044000 | 800000  |         |         |         |         |
 
 
-| Bit | Function |
-| --- | --- |
-| 31 | NA |
-| 30 | NA |
-| 29 | NA |
-| 28 | NA |
-| 27 | NA |
-| 26 | NA |
-| 25 | NA |
-| 24 | Instruction Register In |
-| 23 | Micro Instruction Counter Reset |
-| 22 | Conditional Instruction Type Select Bit 3 |
-| 21 | Conditional Instruction Type Select Bit 2 |
-| 20 | Conditional Instruction Type Select Bit 1 |
-| 19 | Program Counter In |
-| 18 | Program Counter Count |
-| 17 | Program Counter Out |
-| 16 | Update Memory Address Register |
-| 15 | Memory In |
-| 14 | Memory Out |
-| 13 | Internal Screen Register In |
-| 12 | Jump Register Out |
-| 11 | Jump Register In |
-| 10 | B Register Out |
-| 9 | B Register In |
-| 8 | A Register Out |
-| 7 | A Register In |
-| 6 | Y Register Out |
-| 5 | Y Register In |
-| 4 | X Register Out |
-| 3 | X Register In |
-| 2 | ALU mode select bit 3 |
-| 1 | ALU mode select bit 2 |
-| 0 | ALU mode select bit 1 |
+| Bit | Function                                   |
+| --  | ------------------------------------------ |
+| 31  | NA                                         |
+| 30  | NA                                         |
+| 29  | NA                                         |
+| 28  | NA                                         |
+| 27  | NA                                         |
+| 26  | NA                                         |
+| 25  | NA                                         |
+| 24  | Instruction Register In                    |
+| 23  | Micro Instruction Counter Reset            |
+| 22  | Conditional Instruction Type Select Bit 3  |
+| 21  | Conditional Instruction Type Select Bit 2  |
+| 20  | Conditional Instruction Type Select Bit 1  |
+| 19  | Program Counter In                         |
+| 18  | Program Counter Count                      |
+| 17  | Program Counter Out                        |
+| 16  | Update Memory Address Register             |
+| 15  | Memory In                                  |
+| 14  | Memory Out                                 |
+| 13  | Internal Screen Register In                |
+| 12  | Jump Register Out                          |
+| 11  | Jump Register In                           |
+| 10  | B Register Out                             |
+| 9   | B Register In                              |
+| 8   | A Register Out                             |
+| 7   | A Register In                              |
+| 6   | Y Register Out                             |
+| 5   | Y Register In                              |
+| 4   | X Register Out                             |
+| 3   | X Register In                              |
+| 2   | ALU mode select bit 3                      |
+| 1   | ALU mode select bit 2                      |
+| 0   | ALU mode select bit 1                      |

@@ -172,3 +172,80 @@ th {
 }
 
 
+.markdown-alert-note {
+  border-left: solid 3px var(--blue);
+  padding-left: 20px;
+  margin-left: 10px;
+
+  ::before{
+    content:  "Note";
+    display: block;
+    font-weight: bold;
+    color: var(--blue);
+  } 
+}
+
+.markdown-alert-note {
+  border-left: solid 3px var(--blue);
+  padding-left: 20px;
+  margin-left: 10px;
+
+  ::before{
+    content:  "Note";
+    display: block;
+    font-weight: bold;
+    color: var(--blue);
+  } 
+}
+
+.markdown-alert-tip {
+  border-left: solid 3px var(--green);
+  padding-left: 20px;
+  margin-left: 10px;
+
+  ::before{
+    content:  "Tip";
+    display: block;
+    font-weight: bold;
+    color: var(--green);
+  } 
+}
+
+.markdown-alert-important {
+  border-left: solid 3px var(--purple);
+  padding-left: 20px;
+  margin-left: 10px;
+
+  ::before{
+    content:  "Important";
+    display: block;
+    font-weight: bold;
+    color: var(--purple);
+  } 
+}
+
+.markdown-alert-warning {
+  border-left: solid 3px var(--yellow);
+  padding-left: 20px;
+  margin-left: 10px;
+
+  ::before{
+    content:  "Warning";
+    display: block;
+    font-weight: bold;
+    color: var(--yellow);
+  } 
+}
+
+.markdown-alert-caution {
+  border-left: solid 3px var(--red);
+  padding-left: 20px;
+  margin-left: 10px;
+
+  ::before{
+    content:  "Caution";
+    display: block;
+    font-weight: bold;
+    color: var(--red);
+  } 
+}

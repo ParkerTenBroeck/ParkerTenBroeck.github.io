@@ -62,6 +62,12 @@
 
     --primary: light-dark(#ffd979, #daa520);
     --text-highlight: color-mix(in srgb-linear, var(--primary) 50%, transparent);
+
+    --blue: light-dark(#0969da, #1f6feb);
+    --green: light-dark(#1a7f37, #3fb950);
+    --purple: light-dark(#8250df, #ab7df8);
+    --yellow: light-dark(#9a6700, #d29922);
+    --red: light-dark(#d1242f, #f85149);
 }
 
 * {
