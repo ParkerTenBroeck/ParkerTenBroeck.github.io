@@ -26,20 +26,6 @@ A more complex example would be something like `invokevirtual <methodref_index>`
 
 [^1]: https://docs.oracle.com/javase/specs/jvms/se23/html/jvms-4.html#jvms-4.1
 
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
 
 
 ## Stack manipulation
