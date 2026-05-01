@@ -40,7 +40,11 @@
     </button>
 </nav>
 
-<script>
+<!-- minified version !-->
+<script>!function(){const e=document.documentElement,t=document.querySelector(".theme-toggle"),a=window.matchMedia("(prefers-color-scheme: dark)"),n=()=>localStorage.theme??e.dataset.theme??(a.matches?"dark":"light"),o=(a,{manual:n=!1}={})=>{e.dataset.theme=a,localStorage.theme=a,t.setAttribute("aria-pressed","dark"===a?"true":"false")};document.documentElement.classList.add("no-theme-transition"),o(n()),requestAnimationFrame(()=>{document.documentElement.classList.remove("no-theme-transition")}),t.addEventListener("click",()=>{const e="dark"===n()?"light":"dark";o(e)})}();</script>
+
+<!-- non minified version !-->
+{# <script>
   (function setupThemeToggle() {
     const root = document.documentElement;
     const btn = document.querySelector(".theme-toggle");
@@ -65,4 +69,4 @@
       applyTheme(next);
     });
   })();
-</script>
+</script> #}

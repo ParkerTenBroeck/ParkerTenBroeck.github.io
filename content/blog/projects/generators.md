@@ -9,6 +9,9 @@ category = ["project"]
 +++
 
 
+Take a look at the [GitHub](https://github.com/ParkerTenBroeck/generators)
+
+<!--
 With the release of Java 24 came the official Class-File API giving a stable and (relatively) ergonomic interface for reading, modifying, and writing java classes/bytecode at runtime with no external dependencies. Seeing this I decided to play around with it and see what fun I could have.
 
 
@@ -47,7 +50,6 @@ Sometimes it's
 # Injection
 
 
-Take a look at the [GitHub](https://github.com/ParkerTenBroeck/generators)
 
 
 
@@ -84,3 +86,5 @@ public static Gen<Long, Void> primes() {
     }
 }
 ```
+
+-->
