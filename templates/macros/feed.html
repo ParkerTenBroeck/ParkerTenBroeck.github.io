@@ -14,9 +14,8 @@
 
 
 {%- macro content(page) -%}
-    
     {%if page.taxonomies.category is containing("photo") %}
-        {{ figures::image(src=page.extra.picture_src, caption=page.description) }}
+        {{ figures::image(src=page.extra.picture_src, caption=page.description) | escape_xml | safe }}
     {% else %}
         {% if page.summary %}{{ page.summary }}{% else %}{{ page.content }}{% endif %}
     {% endif %}
