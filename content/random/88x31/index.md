@@ -17,6 +17,7 @@ I decided to make a 88x31 badge for fun and included a fun little puzzle inside 
 Here are some badges from people I know/like
 
 {{ badge88x31(link="https://ivytime.gay", src="ivytime.gay.png", alt="Ivy's badge", new_tab=true) }}
+{{ badge88x31(link="https://tpgc.me/", src="theboy.gif", alt="The Boys badge", new_tab=true) }}
 
 ---
 
