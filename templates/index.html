@@ -10,6 +10,7 @@
  You can find <a href="{{ get_url(path='@/blog/_index.md') }}">Posts</a>,
 {# <a href="{{ get_url(path='@/projects/_index.md') }}">Projects</a>,
 <a href="{{ get_url(path='@/crafts/_index.md') }}">Crafts</a>, #}
+<a href="{{ get_url(path='random') }}">Random</a>,
 <a href="{{ get_url(path='@/pictures/_index.md') }}">Pictures</a>,
 <a href="{{ get_url(path='tags') }}">Tags</a>, and
 <a href="{{ get_url(path='category') }}">Categories</a> up above on any page.
@@ -23,10 +24,10 @@
 
 <p>Heres a list of stuff I'd like you to checkout:</p>
 <ul>
+    <li>{{ post::page_link(path="blog/projects/coroutines.md") }}</li>
     <li>{{ post::page_link(path="blog/projects/automata.md") }}</li>
     <li>{{ post::page_link(path="blog/projects/rasterizer/index.md") }}</li>
     <li>{{ post::page_link(path="blog/projects/ansi.md") }}</li>
-    <li>{{ post::page_link(path="blog/projects/generators.md") }}</li>
     <li>{{ post::page_link(path="blog/projects/fastexpr.md") }}</li>
     <li>{{ post::page_link(path="blog/projects/milkv/index.md") }}</li>
     <li>{{ post::page_link(path="blog/website.md") }}</li>
